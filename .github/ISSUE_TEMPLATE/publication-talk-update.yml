@@ -1,0 +1,79 @@
+name: Publication / Talk Update
+description: Add or update publications, talks, or event metadata.
+title: "[Research Output] "
+labels: ["publications", "content"]
+body:
+  - type: textarea
+    id: item_summary
+    attributes:
+      label: Item Summary
+      description: Describe the publication/talk to add or update.
+      placeholder: Add PRD 2026 paper with DOI and abstract.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: item_type
+    attributes:
+      label: Item Type
+      options:
+        - Publication
+        - Talk
+        - Poster
+        - Workshop / School
+    validations:
+      required: true
+
+  - type: textarea
+    id: canonical_links
+    attributes:
+      label: Canonical Links
+      description: DOI, arXiv, conference page, slides, or recording.
+      placeholder: |
+        DOI:
+        arXiv:
+        Event page:
+    validations:
+      required: true
+
+  - type: textarea
+    id: metadata
+    attributes:
+      label: Required Metadata
+      description: Provide all known fields (authors, title, date, location).
+      placeholder: |
+        Title:
+        Authors:
+        Date:
+        Venue:
+        Location:
+    validations:
+      required: true
+
+  - type: textarea
+    id: files_allowed
+    attributes:
+      label: Files Allowed To Change
+      placeholder: |
+        content/publications/*
+        content/events/*
+        content/_index.md
+    validations:
+      required: true
+
+  - type: textarea
+    id: accuracy_constraints
+    attributes:
+      label: Accuracy Constraints
+      placeholder: Use official metadata only. No speculative claims.
+    validations:
+      required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition Of Done
+      placeholder: New/updated page renders correctly and appears in relevant collection blocks.
+    validations:
+      required: true
+

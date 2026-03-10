@@ -87,3 +87,12 @@ Definition of done:
 - Optional automated workflows:
   - `.github/workflows/import-publications.yml`
   - `.github/workflows/upgrade.yml`
+
+## Templates For Agent Work
+
+- Issue forms:
+  - `.github/ISSUE_TEMPLATE/content-update.yml`
+  - `.github/ISSUE_TEMPLATE/publication-talk-update.yml`
+  - `.github/ISSUE_TEMPLATE/site-improvement.yml`
+- Pull request template:
+  - `.github/PULL_REQUEST_TEMPLATE.md`

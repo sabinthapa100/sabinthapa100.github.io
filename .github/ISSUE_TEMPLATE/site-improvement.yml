@@ -1,0 +1,64 @@
+name: Site Improvement
+description: UI/navigation/readability/SEO/CI improvements.
+title: "[Improve] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is currently weak or confusing?
+      placeholder: Navigation has too many top-level links for first-time visitors.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_change
+    attributes:
+      label: Proposed Change
+      description: What should be changed?
+      placeholder: Add one landing page section for quick navigation; reduce menu clutter.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      placeholder: In scope: menus + homepage only. Out of scope: theme pack changes.
+    validations:
+      required: true
+
+  - type: textarea
+    id: files_allowed
+    attributes:
+      label: Files Allowed To Change
+      placeholder: |
+        config/_default/menus.yaml
+        content/_index.md
+        README.md
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Required Checks
+      options:
+        - label: Keep claims accurate and non-promotional.
+          required: true
+        - label: Keep copy concise and clear.
+          required: true
+        - label: Preserve existing working deploy pipeline.
+          required: true
+        - label: Verify with local or CI build before merge.
+          required: true
+
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition Of Done
+      placeholder: Improvement is visible, tested, and documented.
+    validations:
+      required: true
+

@@ -1,0 +1,61 @@
+name: Content Update
+description: Add or revise profile content (bio, links, sections, wording).
+title: "[Content] "
+labels: ["content"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should change and why?
+      placeholder: Update homepage summary to reflect current research focus.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is in scope and out of scope?
+      placeholder: In scope: homepage summary and author bio. Out of scope: visual redesign.
+    validations:
+      required: true
+
+  - type: textarea
+    id: files_allowed
+    attributes:
+      label: Files Allowed To Change
+      description: List exact files or folders the agent may edit.
+      placeholder: |
+        content/_index.md
+        data/authors/me.yaml
+    validations:
+      required: true
+
+  - type: textarea
+    id: source_of_truth
+    attributes:
+      label: Source Of Truth
+      description: Paste links/text that must be treated as authoritative.
+      placeholder: CV PDF, Google Scholar profile, official lab page, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: accuracy_constraints
+    attributes:
+      label: Accuracy Constraints
+      description: State constraints clearly (for example, no exaggeration, no fabricated metrics).
+      placeholder: No inflated claims. Use only verifiable facts from provided sources.
+    validations:
+      required: true
+
+  - type: textarea
+    id: definition_of_done
+    attributes:
+      label: Definition Of Done
+      description: What must be true before this can be merged?
+      placeholder: Content updated, no template leftovers, build passes in CI.
+    validations:
+      required: true
+
