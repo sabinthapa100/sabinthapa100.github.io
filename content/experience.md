@@ -1,6 +1,6 @@
 ---
 title: 'Experience'
-date: 2023-10-24
+date: 2026-03-10
 type: landing
 
 design:
@@ -20,14 +20,10 @@ sections:
       is_education_first: false
   - block: resume-skills
     content:
-      title: Skills & Hobbies
+      title: Technical Skills
       username: me
   - block: resume-awards
     content:
       title: Awards
-      username: me
-  - block: resume-languages
-    content:
-      title: Languages
       username: me
 ---
