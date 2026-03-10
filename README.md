@@ -53,3 +53,37 @@ hugo --minify
 
 - This repo intentionally removed starter/template demo content (blog/course/project/slide examples).
 - The local `agents/` folder is not part of the published site.
+
+## Improvement Roadmap
+
+- Add a dedicated `talks/` listing page with filters by year and topic.
+- Add `publications.bib` + auto-import workflow for easier publication updates.
+- Add structured JSON-LD for person/publication metadata improvements.
+- Add analytics + privacy-friendly monitoring (optional).
+- Add a short media/press section if needed.
+
+## AI Agent + Git Workflow (Recommended)
+
+1. Create a short issue for each change (content update, publication, style tweak).
+2. Ask the AI agent to work on a branch per issue (`feat/...`, `fix/...`).
+3. Let CI run automatically on PR (`.github/workflows/build.yml`).
+4. Require green checks before merge.
+5. Merge to `main` and let deploy workflow publish to GitHub Pages (`.github/workflows/deploy.yml`).
+
+Recommended prompt pattern for agent tasks:
+
+```text
+Goal:
+Scope:
+Files allowed to change:
+Accuracy constraints:
+Definition of done:
+```
+
+## Existing CI/CD
+
+- CI build on pull requests: `.github/workflows/build.yml`
+- Auto deploy on push to `main`: `.github/workflows/deploy.yml`
+- Optional automated workflows:
+  - `.github/workflows/import-publications.yml`
+  - `.github/workflows/upgrade.yml`

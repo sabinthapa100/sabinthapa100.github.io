@@ -49,6 +49,9 @@ sections:
       title: Academic Links
       text: |-
         - [INSPIRE-HEP Author Profile](https://inspirehep.net/authors/1635423)
+        - [Google Scholar](https://scholar.google.com/citations?user=9qdeqAgAAAAJ&hl=en&oi=ao)
         - [Kent State Physics Profile](https://www.kent.edu/physics/sabin-thapa)
         - [Download Academic CV](/uploads/cv.pdf)
+        
+        Community service (one place): Coordinator, QNepal (QWorld affiliate).
 ---

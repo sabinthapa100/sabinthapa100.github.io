@@ -27,8 +27,6 @@ bio: |
 affiliations:
   - name: Kent State University
     url: https://www.kent.edu/
-  - name: QNepal (QWorld Affiliate)
-    url: https://qworld.net/qnepal
 
 links:
   - icon: at-symbol
@@ -47,6 +45,9 @@ links:
   - icon: link
     url: https://www.kent.edu/physics/sabin-thapa
     label: Kent State Profile
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=9qdeqAgAAAAJ&hl=en&oi=ao
+    label: Google Scholar
 
 interests:
   - Quantum Computing and Quantum Simulation
@@ -91,12 +92,6 @@ experience:
     summary: |
       Supported undergraduate physics instruction and laboratory sections,
       including data analysis and computational problem solving.
-  - role: Coordinator
-    org: QNepal (QWorld Affiliate)
-    start: 2023-06-01
-    summary: |
-      Organizing community-led quantum computing learning activities and outreach programs.
-
 skills:
   - name: Programming and Scientific Computing
     items:
