@@ -15,7 +15,38 @@ How to add or update content on this site. For the "why," see
    (kebab-case, e.g. `content/events/some-conference-2027/index.md`).
 4. Fill in the frontmatter with what you actually know. Leave `TODO: verify ...`
    for anything you don't — never guess a date, venue, or outcome.
-5. Preview locally (`hugo server`) and confirm it appears where expected.
+5. Keep `date` and `lastmod` in sync on every touch — the homepage's Recent
+   Updates block sorts by `date`, so an update that doesn't bump it won't
+   surface there.
+6. Preview locally (`hugo server`) and confirm it appears where expected.
+
+## Notes taxonomy
+
+`content/notes/` has five hubs: General Physics (`physics/`), Quantum
+(`quantum/`), High-Energy & Nuclear Physics (`high-energy-nuclear/`),
+Computing & AI (`computing-ai/`), and Reading & Reflections
+(`reading-reflections/`). A note's `area:` frontmatter names its hub;
+`topics: []` can list several finer-grained tags (a note can reasonably
+carry more than one, e.g. `high-energy-physics` and
+`quantum-field-theory` on the same pNRQCD note) — topics are metadata, not
+new folders. Don't create a sub-folder per topic.
+
+## Math
+
+KaTeX is on site-wide (`hugoblox.content.math.enable: true` in
+`config/_default/params.yaml`) — write LaTeX directly in Markdown, no setup
+needed: inline `$E=mc^2$` or `\(E=mc^2\)`, display `$$...$$` or `\[...\]`,
+and `\begin{aligned}...\end{aligned}` inside a display block. A page can
+still opt out with `math: false` frontmatter if it never needs it.
+
+## Video
+
+Hugo's built-in shortcode handles YouTube embeds, responsive and
+autoplay-off by default: `{{</* youtube dQw4w9WgXcQ */>}}`. Privacy-enhanced
+mode (youtube-nocookie.com) is on site-wide via `privacy.youtube.
+privacyEnhanced: true` in `config/_default/hugo.yaml`. Embed the video
+inside the Note/Journey page that actually discusses it — there's no
+separate Video section.
 
 ## Factual integrity
 

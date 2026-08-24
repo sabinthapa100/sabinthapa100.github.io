@@ -1,0 +1,56 @@
+/*
+ * Subtle per-family accent colors for the content taxonomy (General
+ * Physics, Quantum, High-Energy & Nuclear Physics, Computing & AI,
+ * Reading & Reflections, Journey). Auto-loaded by the theme when this
+ * file exists -- see docs/DESIGN-GUIDE.md.
+ *
+ * Deliberately restrained: a small left-border + dot on the Notes/Journey
+ * dropdown links, not background recoloring or a competing theme. Applied
+ * via plain CSS href-attribute selectors so it needs no template changes
+ * beyond what config/_default/menus.yaml already renders.
+ */
+
+:root {
+  --accent-general-physics: #2563eb;
+  --accent-quantum: #7c3aed;
+  --accent-high-energy-nuclear: #d97706;
+  --accent-computing-ai: #0891b2;
+  --accent-reading-reflections: #e11d48;
+  --accent-journey: #059669;
+}
+
+.nav-dropdown-link[href^="/notes/physics/"],
+.nav-dropdown-link[href^="/notes/quantum/"],
+.nav-dropdown-link[href^="/notes/high-energy-nuclear/"],
+.nav-dropdown-link[href^="/notes/computing-ai/"],
+.nav-dropdown-link[href^="/notes/reading-reflections/"],
+.nav-dropdown-link[href^="/eras/"] {
+  border-left: 3px solid transparent;
+  padding-left: 0.75rem;
+  margin-left: -0.25rem;
+  transition: border-color 0.2s ease;
+}
+
+.nav-dropdown-link[href^="/notes/physics/"] {
+  border-left-color: var(--accent-general-physics);
+}
+
+.nav-dropdown-link[href^="/notes/quantum/"] {
+  border-left-color: var(--accent-quantum);
+}
+
+.nav-dropdown-link[href^="/notes/high-energy-nuclear/"] {
+  border-left-color: var(--accent-high-energy-nuclear);
+}
+
+.nav-dropdown-link[href^="/notes/computing-ai/"] {
+  border-left-color: var(--accent-computing-ai);
+}
+
+.nav-dropdown-link[href^="/notes/reading-reflections/"] {
+  border-left-color: var(--accent-reading-reflections);
+}
+
+.nav-dropdown-link[href^="/eras/"] {
+  border-left-color: var(--accent-journey);
+}
