@@ -155,9 +155,10 @@ hugoblox:
   # Content rendering and behavior
   # ────────────────────────────────────────────────────────────────────────────
   content:
-    # Math rendering
+    # Math rendering (KaTeX) -- site-wide default. A page can still opt out
+    # or in individually with `math: true`/`false` frontmatter if needed.
     math:
-      enable: false
+      enable: true
     # Table of contents
     toc:
       enable: true
