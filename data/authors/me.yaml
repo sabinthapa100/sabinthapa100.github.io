@@ -13,16 +13,19 @@ status:
   icon: "🔬"
 role: PhD Candidate in Physics (Expected 2026)
 bio: |
-  Hi, I am Sabin Thapa, a Physics PhD candidate at Kent State University
-  (expected 2026). I work in theoretical and phenomenological high-energy
-  nuclear physics, with a focus on quarkonium transport, suppression, and
-  regeneration in QGP across RHIC and LHC systems.
-
-  My research uses semi-classical transport and open-quantum-system methods
-  (including Lindblad evolution), supported by reproducible C++ and Python
-  simulation pipelines. In parallel, I explore quantum computing for HEP
-  (state preparation, adiabatic, and variational workflows for lattice gauge
-  theory) and practical ML/AI support for scientific workflows.
+  I study strongly interacting matter under extreme conditions using
+  high-energy nuclear collisions. Quantum chromodynamics predicts that, at
+  sufficiently high temperature and energy density, quarks and gluons can
+  form a quark–gluon plasma — a state of matter similar to what filled the
+  early Universe shortly after the Big Bang. My work asks how this medium
+  forms and evolves, what changes as we move from large heavy-ion
+  collisions to light-ion and smaller collision systems, and how we can
+  distinguish hot-medium effects from modifications already present in
+  cold nuclei. I use computational modeling, hydrodynamic backgrounds, and
+  quantum and semiclassical transport to connect QCD theory with
+  measurements at RHIC and the LHC. Alongside this work, I explore quantum
+  computing and AI/scientific machine learning for problems in fundamental
+  physics and beyond.
 
 affiliations:
   - name: Kent State University
@@ -63,8 +66,10 @@ education:
     start: 2019-08-01
     end: 2026-08-31
     summary: |
-      Advisors: Dr. Andrew Hanlon, Dr. Ramona Vogt, and Prof. Michael Strickland.
-      Current work centers on quarkonium transport and suppression in p--Pb and heavy-ion systems.
+      Current advisors: Dr. Andrew Hanlon and Dr. Ramona Vogt. Earlier in
+      the PhD, worked with Prof. Michael Strickland through Spring 2024.
+      Current work centers on quarkonium transport and suppression in
+      p--Pb and heavy-ion systems.
   - degree: M.A. in Physics
     institution: Kent State University
     start: 2019-08-01
@@ -90,30 +95,6 @@ experience:
     summary: |
       Supported undergraduate physics instruction and laboratory sections,
       including data analysis and computational problem solving.
-skills:
-  - name: Programming and Scientific Computing
-    items:
-      - label: Python
-        level: 5
-      - label: C++
-        level: 5
-      - label: Mathematica
-        level: 4
-      - label: MATLAB (basic)
-        level: 2
-      - label: Qiskit
-        level: 4
-  - name: Research Toolchain
-    items:
-      - label: HPC and Slurm Workflows
-        level: 5
-      - label: Statistical Analysis and Uncertainty Quantification
-        level: 5
-      - label: Linux and Git-based Reproducible Pipelines
-        level: 5
-      - label: ROOT, Pythia, Geant4 (working familiarity)
-        level: 4
-
 languages:
   - name: English
     level: 4
