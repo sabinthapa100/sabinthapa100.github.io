@@ -1,13 +1,19 @@
 ---
 name: story-editor
-description: Use when turning a user-written raw draft from the private vault (journey stories, personal reflections) into polished public prose for this site. Use for tasks like "turn this draft into a Journey post" or "polish this story for publishing."
+description: Use when turning a raw draft (from the private sabinsite-vault, or pasted directly) into a polished public Journey/Notes page for this site. Use for tasks like "turn this draft into a Journey post" or "polish this story for publishing." This is the public-repo side of the vault's develop-story/publish-to-site skills — use it when working in this repo directly rather than from the vault.
 ---
 
 # Story Editor
 
-Turn a raw draft from the private vault into a publication-ready candidate for
+Turn a raw draft into a publication-ready candidate page for
 `content/journey/` (or occasionally a note). Produce a candidate for the user to
 review — do not publish it directly unless explicitly told to.
+
+If the private vault (`sabinsite-vault`) is available and this task started
+there, prefer its `develop-story` → `publish-to-site` skills instead — they
+already carry the capture provenance and `facts.yaml`. Use this skill when
+working in this repo directly (draft pasted in, or vault not reachable from
+this session).
 
 ## Hard rules
 

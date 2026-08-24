@@ -1,58 +1,71 @@
 # Private Vault Interface
 
-This public repo holds only publication-ready content. Raw drafts, unpublished
-facts, and source material live in a **separate, private** repository — never in
-this one.
+This public repo holds only publication-ready content. Raw captures,
+unpublished facts, and in-progress drafts live in a **separate, private**
+repository — never in this one.
 
-## Intended workstation layout
+## Current setup
 
 ```text
-SabinSite/
-├── site/                # this public repo
-├── vault/                # separate PRIVATE Git repository
-└── media-originals/      # local/home-server media archive, not Git
+sabinsite-vault/          PRIVATE — local git repo on the home server
+sabinsite-media/          private original media, home server, not Git
+sabinthapa100.github.io/  this repo (public)
 ```
 
-## Vault structure (future, not part of this repo)
+`sabinsite-vault` has **no GitHub remote configured** — no authenticated
+write access was available to create the private GitHub repository when it
+was set up, so it exists as a local repository on the home server only.
+Commits happen there; nothing is pushed anywhere until a remote exists.
+
+## Vault structure
 
 ```text
-vault/
-├── inbox/
-├── drafts/
-│   ├── journey/
-│   ├── notes/
-│   ├── research/
-│   └── events/
-├── facts/
-├── sources/
-├── reading/
-├── publish-ready/
-└── planning/
+sabinsite-vault/
+├── captures/YYYY/MM/     one immutable file per raw phone/text capture
+├── work/
+│   ├── journey/          evolving personal/scientific story work items
+│   ├── notes/            evolving intellectual/technical work items
+│   ├── research/         evolving research-direction work items
+│   └── events/           staging notes before a canonical public Event exists
+├── sources/               shared external references
+├── reading/                book/article/video references, not yet developed
+├── publish-ready/          pointers to work items ready for an explicit publish
+└── archive/                retired work items and synthetic test content
 ```
 
-A typical draft source:
+A typical work item:
 
 ```text
-drafts/journey/2019-arriving-at-kent/
-├── raw.md
-├── facts.yaml
+work/journey/coming-to-the-united-states/
+├── meta.yaml     # captures it references, status, topics
+├── facts.yaml    # explicit / uncertain / contradicted claims + sources
 ├── sources.md
-└── photo-selection.md
+├── draft.md      # produced by develop-story / develop-note
+└── publish.md    # produced once ready to prepare for the public site
 ```
 
 ## Rules governing the interface
 
-- AI may improve `raw.md`'s prose. AI may **not** alter or invent facts in
-  `facts.yaml` — see `.agent/FACT-RULES.md` and the `story-editor` skill.
-- High-resolution original photographs/videos stay in `media-originals/`, never
-  in Git. Only intentionally selected, web-optimized media is copied into this
-  public site (see `docs/MEDIA-GUIDE.md`).
-- The vault may eventually be a private GitHub repository so Claude Code on web/
-  mobile can work with its text safely — that migration is a future milestone,
-  not part of this refactor.
+- A capture file is immutable — new material is appended as a new capture,
+  never edited into an old one. See the vault's `CLAUDE.md` and
+  `.claude/skills/capture/SKILL.md`.
+- AI may improve a draft's prose. AI may **not** alter or invent facts in
+  `facts.yaml` — see `.agent/FACT-RULES.md` here and the vault's own
+  `develop-story`/`develop-note` skills.
+- `captured_at` (when something was told to Claude) is never confused with
+  the historical date content describes — the vault enforces this
+  explicitly in its capture schema.
+- High-resolution original photographs/videos stay in `sabinsite-media/` on
+  the home server, never in Git. Only intentionally selected, web-optimized
+  media is copied into this public site (see `docs/MEDIA-GUIDE.md`).
+- Publishing from the vault into this repo always goes through the vault's
+  `publish-to-site` skill: a content branch here, a build, a review, a
+  push, a PR — never a direct merge. See `docs/MOBILE-WORKFLOW.md`.
 
 ## Status
 
-Not yet created. This document exists so the interface is defined before the
-vault exists, and so no private material is ever pasted directly into this
-public repo in the meantime.
+Created and in active use (home server, `/home/sabin/sabinsite-vault`).
+No GitHub remote yet — if/when authenticated GitHub access to create a
+private repository becomes available, that's the next step, followed by a
+laptop clone. Until then it's a single-machine private repository, not a
+synchronized one.

@@ -46,15 +46,18 @@ INFERENCE / DRAFT / UNKNOWN and never silently convert one into another:
 
 ## Privacy
 
-Raw material lives in a **separate private vault repo**, not here (see
-`docs/VAULT-INTERFACE.md`). Never publish unedited private drafts, never commit
-anything from a local `vault/`, `drafts/`, or similar untracked personal folder.
+Raw material lives in a **separate private vault repo** (`sabinsite-vault`, on
+the home server — see `docs/VAULT-INTERFACE.md`), not here. Never publish
+unedited private drafts, never commit anything from a local `vault/`,
+`drafts/`, or similar untracked personal folder. Public publishing always
+requires explicit intent ("publish this," "put this on my website") — see
+`docs/MOBILE-WORKFLOW.md`.
 
 ## Using `.agent/` and `.claude/skills/`
 
 `.agent/` holds concise, agent-facing operational rules (start with
 `.agent/README.md`). `docs/` is the human-readable version of the same policies.
-`.claude/skills/` holds four workflows: `site-maintainer` (structural changes),
-`content-updater` (add/update one content item), `story-editor` (private draft →
-public prose), `site-reviewer` (pre-publish check). Prefer the matching skill over
-ad hoc edits.
+`.claude/skills/` holds: `site-maintainer` (structural changes), `content-updater`
+(add/update one content item), `story-editor` (draft → public Journey/Notes page),
+`site-reviewer` (pre-publish check), `remote-site-workflow` (branch/PR discipline
+from any workstation). Prefer the matching skill over ad hoc edits.
