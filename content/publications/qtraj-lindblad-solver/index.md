@@ -1,20 +1,20 @@
 ---
 title: "QTRAJ 1.0: A Lindblad equation solver for heavy-quarkonium dynamics"
 authors:
-  - Hamza B. Omar
-  - Miguel A. Escobedo
-  - A. Islam
+  - Hisham Ba Omar
+  - Miguel Ángel Escobedo
+  - Ajaharul Islam
   - Michael Strickland
   - me
-  - Pieter V. Griend
-  - James H. Weber
+  - Peter Vander Griend
+  - Johannes Heinrich Weber
 date: "2022-01-01T00:00:00Z"
 
 publishDate: "2022-01-01T00:00:00Z"
 
 publication_types: ["article-journal"]
 
-publication: "*Computer Physics Communications* 273 (2022)"
+publication: "*Computer Physics Communications* 273, 108266 (2022)"
 publication_short: "*Comput. Phys. Commun.*"
 
 abstract: |
@@ -32,11 +32,15 @@ featured: false
 
 hugoblox:
   ids:
-    doi: 10.1016/j.cpc.2021.108262
+    doi: 10.1016/j.cpc.2021.108266
+    arxiv: 2107.06147
 
 links:
   - type: pdf
-    url: https://doi.org/10.1016/j.cpc.2021.108262
+    url: https://doi.org/10.1016/j.cpc.2021.108266
+  - type: preprint
+    provider: arxiv
+    id: "2107.06147"
 
 image:
   caption: ''

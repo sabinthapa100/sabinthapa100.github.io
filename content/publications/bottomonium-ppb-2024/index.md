@@ -35,10 +35,14 @@ featured: true
 hugoblox:
   ids:
     doi: 10.1103/PhysRevD.109.096016
+    arxiv: 2401.16704
 
 links:
   - type: pdf
     url: https://doi.org/10.1103/PhysRevD.109.096016
+  - type: preprint
+    provider: arxiv
+    id: "2401.16704"
 
 image:
   caption: ''
