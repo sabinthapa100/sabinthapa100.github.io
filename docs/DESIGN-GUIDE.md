@@ -28,10 +28,14 @@ Global appearance belongs in the existing Hugo architecture — do not invent a 
 - `config/_default/menus.yaml` — navigation
 - `config/_default/params.yaml` / `hugoblox.yaml` — theme, colors, typography,
   header/footer
-- `assets/css/custom.css` — custom CSS overrides (not created yet — add it here
-  when the first override is actually needed, rather than pre-scaffolding it)
-- `assets/media/site/` — site-level imagery: logo, banners (not created yet,
-  same reasoning)
+- `assets/css/custom.css` — custom CSS overrides, auto-loaded by the theme
+  when present. Currently a handful of per-content-family accent colors
+  (Quantum, High-Energy & Nuclear Physics, Computing & AI, Reading &
+  Reflections, Journey, General Physics) applied to the Notes/Journey
+  dropdown links — restrained, no background recoloring. Add to it rather
+  than starting a second stylesheet.
+- `assets/media/site/` — site-level imagery: logo, banners (not created yet —
+  add it here when actually needed, rather than pre-scaffolding it)
 
 ## Tone
 

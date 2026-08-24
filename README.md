@@ -8,15 +8,19 @@ notes, journey, and about. Built with Hugo + [HugoBlox](https://hugoblox.com).
 
 ```text
 content/
-├── research/       Broad research directions
+├── research/       "What I Work On" + a separate Explorations area
 ├── projects/        Concrete research/software projects
 ├── publications/    Formal scholarly outputs
 ├── events/          Talks, conferences, workshops, schools (nav: "Talks & Events")
-├── notes/           Long-term notebook (physics, quantum, ai, computing)
-├── journey/         Personal/scientific chronology
-├── about/           Coherent public profile
+├── notes/           Long-term notebook: physics, quantum, high-energy-nuclear,
+│                     computing-ai, reading-reflections
+├── journey/         Personal/scientific chronology, grouped by era
+├── about/           Coherent public profile + academic-record subpage
 └── now/             What I'm doing right now
 ```
+
+Primary nav is five items — Home / Research / Notes / Journey / About — with
+Research and Notes as dropdowns.
 
 Full architecture: [docs/SITE-ARCHITECTURE.md](docs/SITE-ARCHITECTURE.md).
 How to add/update content: [docs/CONTENT-GUIDE.md](docs/CONTENT-GUIDE.md).
@@ -39,9 +43,10 @@ others) from a desktop or a phone:
 - [`CLAUDE.md`](CLAUDE.md) / [`AGENTS.md`](AGENTS.md) — entry-point rules.
 - [`.agent/`](.agent/) — concise, agent-facing operational rules (architecture,
   content, factual-integrity, design, git workflow).
-- [`.claude/skills/`](.claude/skills/) — four workflows: `site-maintainer`
+- [`.claude/skills/`](.claude/skills/) — five workflows: `site-maintainer`
   (structural changes), `content-updater` (add/update one item), `story-editor`
-  (private draft → public prose), `site-reviewer` (pre-publish check).
+  (private draft → public prose), `site-reviewer` (pre-publish check),
+  `remote-site-workflow` (branch/PR discipline from any workstation).
 - [`docs/MOBILE-WORKFLOW.md`](docs/MOBILE-WORKFLOW.md) — recommended pattern for
   making changes away from a desktop.
 

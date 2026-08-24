@@ -8,8 +8,14 @@ résumé template and not a startup landing page.
 ## Architecture
 
 - `content/` — page bundles. Sections: `research/`, `publications/`, `events/`
-  (nav label "Talks & Events"), `notes/`, `journey/`, `about/`, `now/`, `projects/`.
-  One real event = one entry in `content/events/`; never duplicate it elsewhere.
+  (nav label "Talks & Events"), `notes/` (five hubs — physics, quantum,
+  high-energy-nuclear, computing-ai, reading-reflections), `journey/` (grouped
+  by `era:`), `about/` (a branch bundle with an `academic-record/` subpage),
+  `now/`, `projects/`. One real event = one entry in `content/events/`; never
+  duplicate it elsewhere. Primary nav is five items — Home/Research/Notes/
+  Journey/About — with Research and Notes as real dropdowns (Hugo's native
+  menu `parent:` field in `config/_default/menus.yaml`, no template work
+  needed for a new entry).
 - `data/authors/me.yaml` — the single source of truth for bio/education/links.
 - `config/_default/` — `menus.yaml` (nav), `params.yaml` / `hugoblox.yaml`
   (site identity/theme).

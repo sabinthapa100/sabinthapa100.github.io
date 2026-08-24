@@ -27,12 +27,16 @@ instead. For turning a private raw draft into public prose, use `story-editor`.
    or title is verification, not invention — do that rather than leaving an
    avoidable TODO. Full rules: `.agent/FACT-RULES.md`.
 5. **Respect metadata over folder structure** — e.g. a project's lifecycle is
-   `status: active`/`status: completed` in frontmatter, never a `current/`/`old/`
-   folder.
+   `status: ongoing`/`completed`/`exploration` in frontmatter, never a
+   `current/`/`old/` folder. A note's hub is its `area:` field, not a new
+   sub-folder; it can carry several `topics: []`.
 6. **Media**: descriptive kebab-case filenames, primary image named
    `featured.<ext>` in the page bundle, no giant unoptimized originals, no
    unnecessary EXIF/GPS. See `docs/MEDIA-GUIDE.md`.
-7. **Validate**: run `hugo --minify` (or `hugo server`) and confirm the new/
+7. **Keep `date` and `lastmod` current on every touch.** The homepage's
+   "Recent Updates" collection sorts by `date` across Notes/Journey/Events/
+   Publications/Projects — an edit that doesn't bump it won't surface there.
+8. **Validate**: run `hugo --minify` (or `hugo server`) and confirm the new/
    updated page builds and appears in its section listing.
 
 ## Guardrails

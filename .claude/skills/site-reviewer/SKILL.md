@@ -11,9 +11,10 @@ fixing them**, unless explicitly asked to fix them too.
 ## Checklist
 
 - **Build**: `hugo --minify` succeeds with no errors.
-- **Navigation**: primary menu matches `.agent/ARCHITECTURE.md` (Home · Research
-  · Publications · Talks & Events · Notes · Journey · About), correct order, no
-  broken links.
+- **Navigation**: primary menu matches `.agent/ARCHITECTURE.md` (Home /
+  Research / Notes / Journey / About, with Research and Notes as dropdowns),
+  correct order, dropdown children correct, no broken links, and each
+  dropdown's top-level label stays independently clickable (not toggle-only).
 - **Duplicate content**: no event/publication/project represented as two
   canonical entries in different sections.
 - **Metadata consistency**: required frontmatter present (title, date, and the

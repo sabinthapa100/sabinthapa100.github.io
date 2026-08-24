@@ -19,7 +19,7 @@ keep them distinct and never silently convert one into another:
   hedged/learning language into a claim of expertise.
 - Changing "attended" to "presented" (or vice versa) without a stated source.
 - Inventing a date, venue, role, collaborator, award, or paper status.
-- Marking a project `status: active` just because its page exists.
+- Marking a project `status: ongoing` just because its page exists.
 - Adding achievements, motivations, or emotions "because they sound plausible" or
   fit the narrative.
 - Skill-bar numbers or expertise levels not already present in `me.yaml` — don't

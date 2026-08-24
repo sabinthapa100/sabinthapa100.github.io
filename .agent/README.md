@@ -12,7 +12,7 @@ directly. Read the file relevant to your task before editing:
   full design guide.
 - `GIT-WORKFLOW.md` — branch/commit/PR rules specific to this repo.
 
-If a task doesn't clearly map to one of the four skills in `.claude/skills/`
-(`site-maintainer`, `content-updater`, `story-editor`, `site-reviewer`), read
-`CLAUDE.md` (or `AGENTS.md`) at the repo root first — it has the non-negotiable
-rules that apply regardless of task.
+If a task doesn't clearly map to one of the five skills in `.claude/skills/`
+(`site-maintainer`, `content-updater`, `story-editor`, `site-reviewer`,
+`remote-site-workflow`), read `CLAUDE.md` (or `AGENTS.md`) at the repo root
+first — it has the non-negotiable rules that apply regardless of task.
