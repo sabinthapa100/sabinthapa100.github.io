@@ -1,7 +1,7 @@
 ---
-title: "Quantum Computing"
+title: "Quantum"
 cms_exclude: true
 view: card
 ---
 
-Notes on quantum computing and quantum simulation.
+Quantum mechanics, quantum field theory, open quantum systems, and quantum computing — derivations, explanations, and reading notes as they mature.

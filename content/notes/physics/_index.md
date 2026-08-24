@@ -1,7 +1,7 @@
 ---
-title: "Physics"
+title: "General Physics"
 cms_exclude: true
 view: card
 ---
 
-Notes on physics: derivations, explanations, and reading notes.
+Physics that interests me outside my core research areas: classical mechanics, electromagnetism, statistical mechanics, relativity, and condensed matter concepts.

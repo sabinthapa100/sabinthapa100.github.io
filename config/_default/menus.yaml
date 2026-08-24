@@ -2,6 +2,12 @@
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
   #     desired widget in your `content/home/` folder.
   #   The weight parameter defines the order that the links will appear in.
+#
+# Dropdowns: a child entry sets `parent: <top-level name>` to nest under it.
+# Hugo's native menu system (`.HasChildren`/`.Children`) plus this theme's
+# `headers/navbar.html` render these as a real dropdown (desktop hover,
+# mobile tap, keyboard accessible) automatically — nothing else to wire up.
+# One dropdown level only; do not nest a `parent:` under another child.
 
 main:
   - name: Home
@@ -10,18 +16,64 @@ main:
   - name: Research
     url: /research/
     weight: 20
+  - name: What I Work On
+    url: /research/
+    parent: Research
+    weight: 21
+  - name: Current Projects
+    url: /projects/
+    parent: Research
+    weight: 22
   - name: Publications
     url: /publications/
-    weight: 30
+    parent: Research
+    weight: 23
   - name: Talks & Events
     url: /events/
-    weight: 40
+    parent: Research
+    weight: 24
   - name: Notes
     url: /notes/
-    weight: 50
+    weight: 30
+  - name: Notes Home
+    url: /notes/
+    parent: Notes
+    weight: 31
+  - name: General Physics
+    url: /notes/physics/
+    parent: Notes
+    weight: 32
+  - name: Quantum
+    url: /notes/quantum/
+    parent: Notes
+    weight: 33
+  - name: High-Energy & Nuclear Physics
+    url: /notes/high-energy-nuclear/
+    parent: Notes
+    weight: 34
+  - name: Computing & AI
+    url: /notes/computing-ai/
+    parent: Notes
+    weight: 35
+  - name: Reading & Reflections
+    url: /notes/reading-reflections/
+    parent: Notes
+    weight: 36
   - name: Journey
     url: /journey/
-    weight: 60
+    weight: 40
+  - name: Journey Home
+    url: /journey/
+    parent: Journey
+    weight: 41
+  - name: Before the PhD
+    url: /eras/before-phd/
+    parent: Journey
+    weight: 42
+  - name: PhD Years
+    url: /eras/phd-years/
+    parent: Journey
+    weight: 43
   - name: About
     url: /about/
-    weight: 70
+    weight: 50

@@ -59,6 +59,7 @@ taxonomies:
   author: authors
   tag: tags
   publication_type: publication_types
+  era: eras
 markup:
   _merge: deep
   highlight:
@@ -67,3 +68,8 @@ security:
   _merge: deep
 sitemap:
   _merge: deep
+# Privacy-enhanced YouTube embeds (youtube-nocookie.com) for the built-in
+# `{{< youtube ID >}}` shortcode — see docs/CONTENT-GUIDE.md.
+privacy:
+  youtube:
+    privacyEnhanced: true
