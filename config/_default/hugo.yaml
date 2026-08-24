@@ -26,6 +26,42 @@ cascade:
       path: /slides/**
       kind: page
     outputs: [HTML, present]
+  # Type badges on card views (e.g. the homepage's mixed "Recent Updates"
+  # collection) — the card partial already supports a `content_meta.
+  # content_type` label, this just fills it in per section instead of
+  # requiring it on every page. A page that sets its own `content_meta`
+  # (e.g. `trending`) must include `content_type` itself too, since Hugo
+  # cascade doesn't deep-merge into a param a page already defines.
+  - _target:
+      path: /notes/**
+      kind: page
+    params:
+      content_meta:
+        content_type: "Note"
+  - _target:
+      path: /journey/**
+      kind: page
+    params:
+      content_meta:
+        content_type: "Journey"
+  - _target:
+      path: /events/**
+      kind: page
+    params:
+      content_meta:
+        content_type: "Event"
+  - _target:
+      path: /publications/**
+      kind: page
+    params:
+      content_meta:
+        content_type: "Publication"
+  - _target:
+      path: /projects/**
+      kind: page
+    params:
+      content_meta:
+        content_type: "Project"
 
 ############################
 ## ADVANCED

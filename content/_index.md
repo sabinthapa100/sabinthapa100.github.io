@@ -2,7 +2,7 @@
 # Leave the homepage title empty to use the site title
 title: ''
 summary: ''
-date: 2026-03-10
+date: 2026-08-24
 type: landing
 
 design:
@@ -14,7 +14,6 @@ sections:
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
-      text: ''
       headings:
         about: ''
         education: ''
@@ -35,36 +34,31 @@ sections:
         shape: circle # Options: circle (default), square, rounded
   - block: markdown
     content:
-      title: ''
-      subtitle: ''
+      title: Research Directions
       text: |-
-        I am a Physics PhD candidate at Kent State University (expected 2026), working in theoretical and phenomenological high-energy nuclear physics, with a growing interest in quantum computing and AI for scientific workflows.
+        **[QCD Matter at Extreme Conditions](/research/)** — quark-gluon plasma formation and evolution under extreme temperature and energy density.
 
-        - [Research directions](/research/)
-        - [About](/about/)
+        **[Quantum & Semiclassical Transport](/research/)** — open-quantum-system and semiclassical methods connecting QCD theory to RHIC/LHC data.
+
+        **[Small and Light Collision Systems](/research/)** — how far toward smaller collision systems do QGP-like effects persist?
+
+        **[Quantum & AI Explorations](/research/quantum-computing/)** — exploratory work in quantum computing and AI for fundamental physics, not yet an established specialty.
     design:
-      columns: '1'
+      columns: "2"
   - block: collection
-    id: papers
+    id: recent
     content:
-      title: Selected Publications
+      title: Recent Updates
       filters:
         folders:
+          - notes
+          - journey
+          - events
           - publications
+          - projects
       count: 6
       order: desc
     design:
-      view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Talks & Events
-      filters:
-        folders:
-          - events
-      count: 12
-      order: desc
-    design:
       view: card
-      columns: 2
+      columns: 3
 ---
