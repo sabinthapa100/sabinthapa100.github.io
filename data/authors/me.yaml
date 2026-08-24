@@ -40,14 +40,16 @@ links:
     url: https://gitlab.com/sabinthapa100
     label: GitLab
   - icon: link
-    url: https://inspirehep.net/authors/1635423
+    url: https://inspirehep.net/authors/1886893
     label: INSPIRE-HEP
   - icon: link
     url: https://www.kent.edu/physics/sabin-thapa
     label: Kent State Profile
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=9qdeqAgAAAAJ&hl=en&oi=ao
-    label: Google Scholar
+    url: https://scholar.google.com/citations?user=9qdeqAgAAAAJ&hl=en&oi=sra
+  - icon: brands/orcid
+    url: https://orcid.org/0000-0002-0637-0526
+    label: ORCID
 
 interests:
   - Quantum Computing and Quantum Simulation
@@ -63,10 +65,6 @@ education:
     summary: |
       Advisors: Dr. Andrew Hanlon, Dr. Ramona Vogt, and Prof. Michael Strickland.
       Current work centers on quarkonium transport and suppression in p--Pb and heavy-ion systems.
-    button:
-      text: Download CV
-      url: /uploads/cv.pdf
-      icon: hero/arrow-down-tray
   - degree: M.A. in Physics
     institution: Kent State University
     start: 2019-08-01

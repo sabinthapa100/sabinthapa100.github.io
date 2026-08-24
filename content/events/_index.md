@@ -1,4 +1,5 @@
-title: Talks and Presentations
+---
+title: Talks & Events
 cms_exclude: true
 #url: talk
 

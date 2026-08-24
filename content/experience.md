@@ -3,6 +3,15 @@ title: 'Experience'
 date: 2026-03-10
 type: landing
 
+# Not part of the new information architecture (superseded by /about/'s
+# Education/Teaching summary) — hidden from the auto-generated docs sidebar
+# so this résumé-style page (incl. skill-level bars, which docs/DESIGN-GUIDE.md
+# explicitly discourages) stops surfacing on every content page. Left in
+# place, still reachable by direct URL, pending a decision on whether its
+# Awards data should be migrated into About or the page retired outright.
+sidebar:
+  hidden: true
+
 design:
   spacing: '5rem'
 

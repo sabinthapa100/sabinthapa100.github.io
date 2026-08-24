@@ -29,6 +29,14 @@ hugo_stats.json
 node_modules/
 
 # ============================================================================
+# Personal / non-site files
+# ============================================================================
+
+# Local scratch folder for personal job-hunt materials (CV/resume source,
+# PDFs) — not part of the published site, must never be committed.
+/agents/
+
+# ============================================================================
 # Environment & Configuration
 # ============================================================================
 

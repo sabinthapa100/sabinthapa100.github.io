@@ -1,98 +1,71 @@
 # Sabin Thapa Website
 
-Personal website source for [https://sabinthapa100.github.io](https://sabinthapa100.github.io), built with Hugo + HugoBlox.
+Source for [sabinthapa100.github.io](https://sabinthapa100.github.io) — a
+long-lived personal scientific website: research, publications, talks & events,
+notes, journey, and about. Built with Hugo + [HugoBlox](https://hugoblox.com).
 
-## What Is In This Site
-
-- Homepage with profile summary and document links
-- Dedicated pages for:
-  - Academia (`/academia/`)
-  - Industry (`/industry/`)
-- Publications list
-- Talks and presentations list
-- CV and resume downloads from `static/uploads/`
-
-## Key Content Files
-
-- Author/profile data: `data/authors/me.yaml`
-- Homepage: `content/_index.md`
-- Academia page: `content/academia.md`
-- Industry page: `content/industry.md`
-- Experience page: `content/experience.md`
-- Talks: `content/events/*/index.md`
-- Publications: `content/publications/*/index.md`
-- Navigation: `config/_default/menus.yaml`
-- Site identity/settings: `config/_default/params.yaml`, `config/_default/hugo.yaml`
-
-## Local Development
-
-Prerequisites:
-
-- Hugo extended (v0.153+ recommended by current theme module)
-- Node.js + npm
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Run local server:
-
-```bash
-hugo server --disableFastRender
-```
-
-Production build:
-
-```bash
-hugo --minify
-```
-
-## Notes
-
-- This repo intentionally removed starter/template demo content (blog/course/project/slide examples).
-- The local `agents/` folder is not part of the published site.
-
-## Improvement Roadmap
-
-- Add a dedicated `talks/` listing page with filters by year and topic.
-- Add `publications.bib` + auto-import workflow for easier publication updates.
-- Add structured JSON-LD for person/publication metadata improvements.
-- Add analytics + privacy-friendly monitoring (optional).
-- Add a short media/press section if needed.
-
-## AI Agent + Git Workflow (Recommended)
-
-1. Create a short issue for each change (content update, publication, style tweak).
-2. Ask the AI agent to work on a branch per issue (`feat/...`, `fix/...`).
-3. Let CI run automatically on PR (`.github/workflows/build.yml`).
-4. Require green checks before merge.
-5. Merge to `main` and let deploy workflow publish to GitHub Pages (`.github/workflows/deploy.yml`).
-
-Recommended prompt pattern for agent tasks:
+## Structure
 
 ```text
-Goal:
-Scope:
-Files allowed to change:
-Accuracy constraints:
-Definition of done:
+content/
+├── research/       Broad research directions
+├── projects/        Concrete research/software projects
+├── publications/    Formal scholarly outputs
+├── events/          Talks, conferences, workshops, schools (nav: "Talks & Events")
+├── notes/           Long-term notebook (physics, quantum, ai, computing)
+├── journey/         Personal/scientific chronology
+├── about/           Coherent public profile
+└── now/             What I'm doing right now
 ```
 
-## Existing CI/CD
+Full architecture: [docs/SITE-ARCHITECTURE.md](docs/SITE-ARCHITECTURE.md).
+How to add/update content: [docs/CONTENT-GUIDE.md](docs/CONTENT-GUIDE.md).
 
-- CI build on pull requests: `.github/workflows/build.yml`
-- Auto deploy on push to `main`: `.github/workflows/deploy.yml`
-- Optional automated workflows:
-  - `.github/workflows/import-publications.yml`
-  - `.github/workflows/upgrade.yml`
+## Local development
 
-## Templates For Agent Work
+Prerequisites: Hugo extended, Node.js + pnpm.
 
-- Issue forms:
-  - `.github/ISSUE_TEMPLATE/content-update.yml`
-  - `.github/ISSUE_TEMPLATE/publication-talk-update.yml`
-  - `.github/ISSUE_TEMPLATE/site-improvement.yml`
-- Pull request template:
-  - `.github/PULL_REQUEST_TEMPLATE.md`
+```bash
+pnpm install
+hugo server --disableFastRender   # http://localhost:1313
+hugo --minify                     # production build, matches CI
+```
+
+## AI agent workflow
+
+This repo is set up for ongoing maintenance by AI coding agents (Claude Code and
+others) from a desktop or a phone:
+
+- [`CLAUDE.md`](CLAUDE.md) / [`AGENTS.md`](AGENTS.md) — entry-point rules.
+- [`.agent/`](.agent/) — concise, agent-facing operational rules (architecture,
+  content, factual-integrity, design, git workflow).
+- [`.claude/skills/`](.claude/skills/) — four workflows: `site-maintainer`
+  (structural changes), `content-updater` (add/update one item), `story-editor`
+  (private draft → public prose), `site-reviewer` (pre-publish check).
+- [`docs/MOBILE-WORKFLOW.md`](docs/MOBILE-WORKFLOW.md) — recommended pattern for
+  making changes away from a desktop.
+
+The hard rule underneath all of it: no biographical or scientific fact is ever
+invented. See [`.agent/FACT-RULES.md`](.agent/FACT-RULES.md).
+
+## Deployment
+
+- CI build on pull requests: [`.github/workflows/build.yml`](.github/workflows/build.yml)
+- Auto deploy on push to `main`: [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
+- HugoBlox framework upgrades: manual only
+  ([`.github/workflows/upgrade.yml`](.github/workflows/upgrade.yml),
+  `workflow_dispatch`) — see `docs/SITE-ARCHITECTURE.md` for the procedure.
+- Publication import from BibTeX: manual only
+  ([`.github/workflows/import-publications.yml`](.github/workflows/import-publications.yml)),
+  currently has a path mismatch with the real `content/publications/` structure —
+  see the workflow file's comments before re-enabling automatic triggering.
+
+## Git workflow
+
+Feature branch → PR → CI → review → merge. Never push directly to `main`. See
+[`.agent/GIT-WORKFLOW.md`](.agent/GIT-WORKFLOW.md).
+
+## Private vault
+
+Raw drafts and unpublished source material live in a separate private
+repository, not here — see [`docs/VAULT-INTERFACE.md`](docs/VAULT-INTERFACE.md).

@@ -41,7 +41,11 @@ enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
-disableAliases: true
+# Native Hugo alias redirect stubs (static HTML + meta refresh) are needed
+# because this site deploys to GitHub Pages, which does not honor the
+# Netlify-style `_redirects` file produced by the `redirects` output format
+# below — that file alone would leave old URLs (e.g. /academia/) 404ing.
+disableAliases: false
 outputs:
   home: [HTML, RSS, headers, redirects, backlinks]
   section: [HTML, RSS]

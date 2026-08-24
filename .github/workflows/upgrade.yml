@@ -1,5 +1,10 @@
 name: Upgrade HugoBlox
 
+#
+# Manual only. HugoBlox framework upgrades are deliberate maintenance, not an
+# unattended weekly job — see docs/SITE-ARCHITECTURE.md for the upgrade
+# procedure. If you want scheduled upgrade PRs again, re-add a `schedule:`
+# trigger deliberately and document why.
 on:
   workflow_dispatch:
     inputs:
@@ -11,9 +16,6 @@ on:
         options:
         - Stable
         - Beta (Preview)
-  schedule:
-    # Run at 05:00 on Monday
-    - cron: '0 5 * * 1'
 
 permissions:
   contents: write

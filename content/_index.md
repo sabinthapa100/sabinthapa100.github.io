@@ -15,10 +15,6 @@ sections:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
       text: ''
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: /uploads/cv.pdf
       headings:
         about: ''
         education: ''
@@ -39,19 +35,13 @@ sections:
         shape: circle # Options: circle (default), square, rounded
   - block: markdown
     content:
-      title: Profile Summary
+      title: ''
       subtitle: ''
       text: |-
-        **Academic focus**
+        I am a Physics PhD candidate at Kent State University (expected 2026), working in theoretical and phenomenological high-energy nuclear physics, with a growing interest in quantum computing and AI for scientific workflows.
 
-        I am a Physics PhD candidate at Kent State University (expected 2026), working in theoretical and phenomenological high-energy nuclear physics. My main research area is heavy-flavor physics, especially quarkonium transport, suppression, and regeneration in QGP across RHIC and LHC collision systems. I use both semi-classical transport modeling and open-quantum-system approaches (including Lindblad evolution), with collaborations connected to the HEFTY community.
-
-        **Industry-oriented focus**
-
-        I build reproducible scientific software and analysis workflows using Python, C++, Linux, Git, Slurm/HPC pipelines, and quantitative validation practices. I am also developing hands-on experience in quantum computing (Qiskit; state-prep and variational workflows) and learning ML/AI tools for scientific workflow acceleration.
-
-        - [View Academic Profile](/academia/)
-        - [View Industry Profile](/industry/)
+        - [Research directions](/research/)
+        - [About](/about/)
     design:
       columns: '1'
   - block: collection
@@ -68,7 +58,7 @@ sections:
   - block: collection
     id: talks
     content:
-      title: Talks and Research Presentations
+      title: Talks & Events
       filters:
         folders:
           - events
@@ -77,12 +67,4 @@ sections:
     design:
       view: card
       columns: 2
-  - block: markdown
-    content:
-      title: Documents
-      text: |-
-        - [Download Academic CV](/uploads/cv.pdf)
-        - [Download Resume](/uploads/resume.pdf)
-    design:
-      columns: '1'
 ---
