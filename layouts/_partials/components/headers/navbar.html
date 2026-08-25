@@ -90,9 +90,7 @@
             {{ $childURL := .URL | absLangURL }}
             {{ $active := eq $childURL $pageURL }}
             {{ if $active }}active{{ end }}
-          {{ end }} inline-flex items-center">
-          {{ .Name }}
-        </a>
+          {{ end }} inline-flex items-center">{{- .Name -}}</a>
         <span
           role="button"
           tabindex="0"

@@ -19,6 +19,63 @@
   --accent-journey: #059669;
 }
 
+/*
+ * Dropdown top-level items (Research, Notes, Journey) render as two
+ * separate controls -- a real <a> label plus a small <span role="button">
+ * toggle for the chevron, so the label stays independently clickable (see
+ * layouts/_partials/components/headers/navbar.html). Left at the theme's
+ * default per-element spacing/hover, the two read as visually disconnected:
+ * hovering the label doesn't highlight the chevron and vice versa, and the
+ * extra padding between them (each is a full .nav-link) makes dropdown
+ * items visibly wider than plain ones (Home, About). This tightens the
+ * pair into one cohesive-looking control and gives the toggle its own
+ * subtle affordance, since on mobile there's no hover to reveal that it's
+ * a separate tap target from the label.
+ */
+.nav-dropdown > a.nav-link {
+  padding-right: 0.125rem;
+}
+
+.nav-dropdown > span.nav-link[role="button"] {
+  padding-left: 0.125rem;
+  border-radius: 9999px;
+}
+
+.nav-dropdown:hover > a.nav-link,
+.nav-dropdown:hover > span.nav-link,
+.nav-dropdown:focus-within > a.nav-link,
+.nav-dropdown:focus-within > span.nav-link {
+  color: var(--color-primary-700);
+}
+
+.dark .nav-dropdown:hover > a.nav-link,
+.dark .nav-dropdown:hover > span.nav-link,
+.dark .nav-dropdown:focus-within > a.nav-link,
+.dark .nav-dropdown:focus-within > span.nav-link {
+  color: var(--color-primary-300);
+}
+
+.nav-dropdown > span.nav-link[role="button"]:hover,
+.nav-dropdown > span.nav-link[role="button"]:focus-visible {
+  background-color: var(--color-primary-100);
+}
+
+.dark .nav-dropdown > span.nav-link[role="button"]:hover,
+.dark .nav-dropdown > span.nav-link[role="button"]:focus-visible {
+  background-color: var(--color-primary-900);
+}
+
+/* Keep long dropdown labels (e.g. "High-Energy & Nuclear Physics") from
+   wrapping awkwardly against the fixed dropdown-list width. */
+.nav-dropdown-list {
+  min-width: 220px;
+}
+
+.nav-dropdown-link {
+  white-space: normal;
+  line-height: 1.3;
+}
+
 .nav-dropdown-link[href^="/notes/physics/"],
 .nav-dropdown-link[href^="/notes/quantum/"],
 .nav-dropdown-link[href^="/notes/high-energy-nuclear/"],
