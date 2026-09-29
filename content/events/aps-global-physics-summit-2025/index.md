@@ -1,6 +1,7 @@
 ---
 title: "Semi-classical treatment of bottomonium suppression in p--Pb collisions"
 date: "2025-03-18T00:00:00Z"
+lastmod: "2026-09-29"
 
 event_name: APS Global Physics Summit
 event_url: https://archive.aps.org/smt/2025/apr-j19/7/
@@ -21,6 +22,7 @@ authors:
 
 tags:
   - Talk
+  - Conference
   - Heavy-Ion Physics
   - Quarkonium
 

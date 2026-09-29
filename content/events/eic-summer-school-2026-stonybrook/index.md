@@ -1,6 +1,7 @@
 ---
 title: "2026 CFNS Summer School on the Physics of the Electron-Ion Collider"
 date: "2026-06-01T00:00:00Z"
+lastmod: "2026-09-29"
 event_name: "2026 CFNS Summer School on the Physics of the Electron-Ion Collider"
 event_url: https://indico.cfnssbu.physics.sunysb.edu/event/604/
 

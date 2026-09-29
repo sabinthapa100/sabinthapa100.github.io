@@ -1,6 +1,7 @@
 ---
 title: "Bottomonium suppression in p+Pb collisions at LHC energies"
 date: "2025-01-13T00:00:00Z"
+lastmod: "2026-09-29"
 
 event_name: "Cold Nuclear Matter Effects: from the LHC to the EIC"
 event_url: https://indico.cfnssbu.physics.sunysb.edu/event/338/contributions/1188/
@@ -20,6 +21,7 @@ authors:
 
 tags:
   - Talk
+  - Workshop
   - Heavy-Ion Physics
   - Quarkonium
 

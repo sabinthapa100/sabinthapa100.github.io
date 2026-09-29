@@ -1,6 +1,7 @@
 ---
 title: "Heavy Quarkonia in Small and Light-Ion Collision Systems"
 date: "2026-06-29T00:00:00Z"
+lastmod: "2026-09-29"
 event_name: "National Nuclear Physics Summer School (NNPSS) 2026"
 event_url: https://www.int.washington.edu/nnpss-2026
 

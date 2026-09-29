@@ -1,6 +1,7 @@
 ---
 title: "IPAM Winter School: Quantum Error Suppression, Mitigation, and Correction"
 date: "2025-02-03T00:00:00Z"
+lastmod: "2026-09-29"
 
 event_name: IPAM Winter School (UCLA)
 location: Los Angeles, California, USA
