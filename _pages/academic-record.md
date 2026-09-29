@@ -16,7 +16,7 @@ permalink: /about/academic-record/
 
 ## Teaching
 
-**Teaching Assistant**, Kent State University, 2019–2024. Supported undergraduate physics instruction and laboratory sections.
+**Teaching Assistant**, Kent State University, August 2019–December 2022 and August–December 2024. Supported undergraduate physics instruction and laboratory sections.
 
 ## Awards
 
