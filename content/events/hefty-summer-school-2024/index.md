@@ -1,6 +1,7 @@
 ---
 title: "Bottomonium suppression and feed-down fractions"
 date: "2024-06-24T00:00:00Z"
+lastmod: "2026-09-29"
 
 event_name: HEFTY Summer School and Collaboration Meeting
 event_url: https://indico.jlab.org/event/921/overview
@@ -20,6 +21,8 @@ authors:
 
 tags:
   - Talk
+  - Summer School
+  - Collaboration Meeting
   - Heavy-Ion Physics
   - Quarkonium
 

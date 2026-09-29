@@ -1,6 +1,7 @@
 ---
 title: "Bottomonium suppression in p--Pb collisions at LHC energies"
 date: "2025-03-18T00:00:00Z"
+lastmod: "2026-09-29"
 
 event_name: APS Topical Group on Hadronic Physics Workshop
 event_url: https://indico.jlab.org/event/868/contributions/15816/
@@ -21,6 +22,7 @@ authors:
 
 tags:
   - Talk
+  - Workshop
   - Heavy-Ion Physics
   - Quarkonium
 

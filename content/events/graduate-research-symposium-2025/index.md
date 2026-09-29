@@ -1,6 +1,7 @@
 ---
 title: "Quantum computing for high-energy physics: ground-state preparation of (2+1)D SU(2) lattice gauge theory"
 date: "2025-04-09T00:00:00Z"
+lastmod: "2026-09-29"
 
 event_name: Graduate Research Symposium, Kent State University
 location: Kent, Ohio, USA
@@ -18,6 +19,7 @@ authors:
 
 tags:
   - Poster
+  - Symposium
   - Quantum Computing
   - Lattice Gauge Theory
 

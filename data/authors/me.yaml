@@ -34,18 +34,21 @@ affiliations:
 links:
   - icon: at-symbol
     url: mailto:sthapa3@kent.edu
-    label: E-mail Me
+    label: Kent State email
+  - icon: at-symbol
+    url: mailto:sabinthapa240@gmail.com
+    label: Gmail
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/sabinthapa/
   - icon: brands/github
     url: https://github.com/sabinthapa100
-  - icon: link
+  - icon: custom/gitlab
     url: https://gitlab.com/sabinthapa100
     label: GitLab
-  - icon: link
+  - icon: academicons/inspire
     url: https://inspirehep.net/authors/1886893
     label: INSPIRE-HEP
-  - icon: link
+  - icon: custom/kent-state
     url: https://www.kent.edu/physics/sabin-thapa
     label: Kent State Profile
   - icon: academicons/google-scholar
@@ -55,16 +58,21 @@ links:
     label: ORCID
 
 interests:
-  - Quantum Computing and Quantum Simulation
-  - Open Quantum Systems
-  - High-Energy Nuclear Theory and Phenomenology
-  - ML and AI for Physics
+  - AI for Physics and Science
+  - AI Safety
+  - Nuclear and High-Energy Physics
+  - Heavy-Ion Collisions
+  - Heavy-Flavor Physics
+  - Quantum Physics and Quantum Computing
+  - Quantum Transport and Open Quantum Systems
+  - Cold QCD Matter
+  - Radiation Physics
 
 education:
   - degree: PhD in Physics (expected)
     institution: Kent State University
-    start: 2019-08-01
-    end: 2026-08-31
+    start: 2019-08-15
+    end: 2026-12-30
     summary: |
       Current advisors: Dr. Andrew Hanlon and Dr. Ramona Vogt. Earlier in
       the PhD, worked with Prof. Michael Strickland through Spring 2024.
@@ -72,13 +80,14 @@ education:
       p--Pb and heavy-ion systems.
   - degree: M.A. in Physics
     institution: Kent State University
-    start: 2019-08-01
+    start: 2019-08-15
+    end: 2021-05-18
   - degree: B.Sc. in Physics
     institution: Amrit Campus, Tribhuvan University
     start: 2014-08-01
     end: 2018-08-31
     summary: |
-      Graduated with distinction (ranked first in batch). Minors in mathematics and chemistry.
+      Graduated with distinction. Minors in mathematics and chemistry.
 
 experience:
   - role: Graduate Researcher
@@ -95,6 +104,7 @@ experience:
     summary: |
       Supported undergraduate physics instruction and laboratory sections,
       including data analysis and computational problem solving.
+
 languages:
   - name: English
     level: 4

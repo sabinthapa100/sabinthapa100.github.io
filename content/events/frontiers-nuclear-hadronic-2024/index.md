@@ -1,6 +1,7 @@
 ---
 title: "Bottomonium suppression in p+Pb collisions at LHC energies"
 date: "2024-02-26T00:00:00Z"
+lastmod: "2026-09-29"
 
 event_name: Frontiers in Nuclear and Hadronic Physics
 event_url: https://www.ggi.infn.it/showevent.pl?id=485

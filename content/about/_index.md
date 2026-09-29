@@ -1,6 +1,7 @@
 ---
 title: "About"
 date: 2026-03-10
+lastmod: 2026-09-29
 type: landing
 
 aliases:
@@ -29,9 +30,9 @@ sections:
 
         - PhD in Physics (expected), Kent State University. Current advisors: Dr. Andrew Hanlon and Dr. Ramona Vogt. Earlier in the PhD, I worked with Prof. Michael Strickland through Spring 2024.
         - M.A. in Physics, Kent State University
-        - B.Sc. in Physics, Amrit Campus, Tribhuvan University — graduated with distinction (ranked first in batch), minors in mathematics and chemistry.
+        - B.Sc. in Physics, Amrit Campus, Tribhuvan University — graduated with distinction, minors in mathematics and chemistry.
 
-        See the [Academic Record](/about/academic-record/) for research experience, teaching, and awards.
+        See the [Curriculum Vitae](/about/cv/) and [Academic Record](/about/academic-record/) for research experience, teaching, and awards.
     design:
       columns: "1"
 ---
