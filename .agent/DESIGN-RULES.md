@@ -1,11 +1,10 @@
 # Design Rules
 
-No major visual redesign is planned for this milestone or by default. Global
-appearance lives in the existing Hugo architecture — `content/_index.md`,
-`config/_default/menus.yaml`, `config/_default/params.yaml`, `hugoblox.yaml`,
-and (once created — they don't exist yet) `assets/css/custom.css` for overrides
-and `assets/media/site/` for site-level imagery — never invent a new
-`appearance/` directory.
+The active site uses al-folio at the repository root and Quartz under
+`quartz/`. Keep the visual language consistent with each system: al-folio pages
+and Sass use `_pages/`, `_config.yml`, `assets/css/`, and `_sass/`; Notes use
+`quartz/quartz.config.yaml` and Quartz components. Do not create a parallel
+theme or an `appearance/` directory.
 
 ## Avoid
 

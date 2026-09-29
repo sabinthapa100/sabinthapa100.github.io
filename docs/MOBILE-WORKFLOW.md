@@ -37,7 +37,7 @@ push, never an automatic merge.
 ## Intent levels
 
 | You say (roughly) | What happens | Touches this repo? |
-|---|---|---|
+| --- | --- | --- |
 | "Remember this...", "I just realized...", "Save this" | Capture: raw words preserved verbatim, timestamped, privately | No |
 | "Work on that story", "organize those thoughts" | Develop: draft built from captures in the vault | No |
 | "Prepare this for Journey/Notes" | Prepare: fact-checked publish-ready version in the vault | No |
@@ -51,7 +51,7 @@ deliberate, explicit step — never inferred from a casual mention.
 ## What you can safely do without a local build
 
 - Any capture/develop/prepare step happens entirely in the vault and never
-  needs Hugo at all.
+    needs this site's Jekyll or Quartz toolchain.
 - A single content publish (one event, one note, one journey entry) via the
   vault's `publish-to-site` skill: it builds and runs `site-reviewer`
   itself before pushing, so a red result surfaces before anything reaches
@@ -59,7 +59,7 @@ deliberate, explicit step — never inferred from a casual mention.
 
 ## What still needs care
 
-- Structural changes (nav, config, layouts, the content-architecture
+- Structural changes (nav, config, layouts, the content architecture
   itself) are higher-risk — prefer doing these at a desktop where the
   result can be inspected directly, or at least review the CI build
   preview carefully before merging.

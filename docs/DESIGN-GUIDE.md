@@ -1,7 +1,8 @@
 # Design Guide
 
-No major visual redesign happened in the foundation-refactor milestone — this
-document records the intended direction for future work.
+The site now combines al-folio for the main academic site and Quartz for the
+Notes garden. Preserve each system's established visual conventions while
+keeping the shared burgundy identity coherent.
 
 ## Visual identity
 
@@ -21,21 +22,14 @@ imagery; subtle topic accents rather than heavy theming.
 
 ## Where appearance actually lives
 
-Global appearance belongs in the existing Hugo architecture — do not invent a new
-`appearance/` directory:
+Main-site appearance belongs to al-folio and its local Sass; Notes appearance
+belongs to Quartz. Do not invent a parallel theme or `appearance/` directory:
 
-- `content/_index.md` — homepage structure/blocks
-- `config/_default/menus.yaml` — navigation
-- `config/_default/params.yaml` / `hugoblox.yaml` — theme, colors, typography,
-  header/footer
-- `assets/css/custom.css` — custom CSS overrides, auto-loaded by the theme
-  when present. Currently a handful of per-content-family accent colors
-  (Quantum, High-Energy & Nuclear Physics, Computing & AI, Reading &
-  Reflections, Journey, General Physics) applied to the Notes/Journey
-  dropdown links — restrained, no background recoloring. Add to it rather
-  than starting a second stylesheet.
-- `assets/media/site/` — site-level imagery: logo, banners (not created yet —
-  add it here when actually needed, rather than pre-scaffolding it)
+- `_pages/` and `_config.yml` — main-page structure and navigation
+- `assets/css/main.scss` and `_sass/_migration.scss` — al-folio styles and
+  restrained site-specific overrides
+- `quartz/quartz.config.yaml` and Quartz components — Notes theme and plugins
+- `assets/img/` — shared optimized media
 
 ## Tone
 

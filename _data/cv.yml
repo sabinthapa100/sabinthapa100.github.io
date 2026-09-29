@@ -1,0 +1,219 @@
+cv:
+  name: Sabin Thapa
+  headline: PhD Candidate in Physics, Kent State University (expected December 2026)
+  location: Kent, Ohio, USA
+  email:
+    - sthapa3@kent.edu
+    - sabinthapa240@gmail.com
+  website: https://sabinthapa100.github.io
+  sections:
+    Education:
+      - institution: Kent State University
+        location: Kent, Ohio, USA
+        area: Physics
+        degree: PhD
+        start_date: "2019-08-15"
+        end_date: "2026-12-30"
+        summary: Expected completion December 2026.
+        highlights:
+          - "Current advisors: Dr. Andrew Hanlon and Dr. Ramona Vogt."
+          - "Earlier PhD advisor: Prof. Michael Strickland through Spring 2024."
+          - Coursework includes advanced quantum mechanics, quantum field theory and QCD, numerical computing, statistical physics, electrodynamics, and algorithms.
+      - institution: Kent State University
+        location: Kent, Ohio, USA
+        area: Physics
+        degree: M.A.
+        start_date: "2019-08-15"
+        end_date: "2021-05-18"
+      - institution: Amrit Campus, Tribhuvan University
+        location: Kathmandu, Nepal
+        area: Physics
+        degree: B.Sc.
+        start_date: "2014"
+        end_date: "2018"
+        summary: Graduated with distinction; minors in mathematics and chemistry.
+
+    Experience:
+      - company: Kent State University
+        position: Graduate Researcher
+        location: Kent, Ohio, USA
+        start_date: "2019-08"
+        end_date: present
+        summary: Research in high-energy nuclear physics and quarkonium transport.
+        highlights:
+          - Ongoing research with Dr. Ramona Vogt since Spring 2024; current advisors are Dr. Ramona Vogt and Dr. Andrew Hanlon.
+          - Earlier PhD research with Prof. Michael Strickland through Spring 2024.
+          - Study bottomonium and charmonium production and transport across small, light-ion, and heavy-ion collision systems.
+          - Use quantum and semiclassical transport, hydrodynamic backgrounds, and reproducible C++ and Python workflows.
+          - "Quantum computing is an exploratory area: implemented small Qiskit simulations of time evolution and scattering-inspired processes, including studies of Trotterization and noise."
+          - Guided study in lattice QCD and hadron spectroscopy with Dr. Andrew Hanlon.
+      - company: Kent State University
+        position: Teaching Assistant
+        location: Kent, Ohio, USA
+        start_date: "2019-08"
+        end_date: "2022-12"
+        summary: Supported undergraduate physics instruction and laboratory sections, including data analysis and computational problem solving.
+      - company: Kent State University
+        position: Teaching Assistant
+        location: Kent, Ohio, USA
+        start_date: "2024-08"
+        end_date: "2024-12"
+        summary: Supported undergraduate physics instruction and laboratory sections.
+
+    Publications:
+      - title: Comprehensive study of Υ(nS) production in Oxygen+Oxygen collisions at LHC
+        authors:
+          - "**Sabin Thapa**"
+          - Biaogang Wu
+          - Ramona Vogt
+          - Ralf Rapp
+        date: "2026"
+        journal: arXiv preprint [nucl-th], not yet journal-published
+        url: https://arxiv.org/abs/2609.16292
+        summary: arXiv:2609.16292. HTML version and INSPIRE record are available from the Publications page.
+      - title: Semiclassical treatment of bottomonium suppression and regeneration in p+Pb collisions
+        authors:
+          - "**Sabin Thapa**"
+          - Biaogang Wu
+          - Ramona Vogt
+          - Ralf Rapp
+        date: "2026"
+        journal: Physical Review D 113, 056006
+        doi: 10.1103/2631-zhtw
+        url: https://arxiv.org/abs/2510.03456
+      - title: Bottomonium suppression in 5.02 and 8.16 TeV p-Pb collisions
+        authors:
+          - Michael Strickland
+          - "**Sabin Thapa**"
+          - Ramona Vogt
+        date: "2024"
+        journal: Physical Review D 109, 096016
+        doi: 10.1103/PhysRevD.109.096016
+        url: https://arxiv.org/abs/2401.16704
+      - title: Transverse momentum dependent feed-down fractions for bottomonium production
+        authors:
+          - Jacob Boyd
+          - "**Sabin Thapa**"
+          - Michael Strickland
+        date: "2023"
+        journal: Physical Review D 108, 094024
+        doi: 10.1103/PhysRevD.108.094024
+      - title: Bottomonium suppression at RHIC and LHC in an open quantum system approach
+        authors:
+          - Michael Strickland
+          - "**Sabin Thapa**"
+        date: "2023"
+        journal: Physical Review D 108, 014031
+        doi: 10.1103/PhysRevD.108.014031
+        url: https://arxiv.org/abs/2305.17841
+      - title: "QTRAJ 1.0: A Lindblad equation solver for heavy-quarkonium dynamics"
+        authors:
+          - H. B. Omar
+          - M. Á. Escobedo
+          - A. Islam
+          - M. Strickland
+          - "**S. Thapa**"
+          - P. Vander Griend
+          - J. H. Weber
+        date: "2022"
+        journal: Computer Physics Communications 273, 108266
+        doi: 10.1016/j.cpc.2021.108266
+        url: https://arxiv.org/abs/2107.06147
+
+    Presentations:
+      - name: "Oral talk: Bottomonium production & modification in small systems: disentangling cold and hot nuclear effects in p+Pb collisions"
+        date: "2026-06-24"
+        location: Hard Probes 2026, Vanderbilt University, Nashville, Tennessee, USA
+        summary: Program and slides are linked from the Talks & Events page.
+      - name: "Student talk: Heavy Quarkonia in Small and Light-Ion Collision Systems"
+        date: "2026-06-29"
+        location: National Nuclear Physics Summer School, Seattle, Washington, USA
+      - name: "Oral talk: Bottomonium suppression and regeneration in p + Pb collisions at LHC energies"
+        date: "2025-10-20"
+        location: APS Division of Nuclear Physics Fall Meeting, Chicago, Illinois, USA
+      - name: "Poster: Quantum Computing for High-Energy Physics: Ground-State Preparation of (2+1)D SU(2) Lattice Gauge Theory"
+        date: "2025-04-09"
+        location: Kent State Graduate Research Symposium, Kent, Ohio, USA
+      - name: "Oral talk: Bottomonium suppression in p-Pb collisions at LHC energies"
+        date: "2025-03-16"
+        location: APS Topical Group on Hadronic Physics Workshop, Anaheim, California, USA
+      - name: "Oral talk: Semi-classical treatment of bottomonium suppression in p-Pb collisions"
+        date: "2025-03-18"
+        location: APS Global Physics Summit, Anaheim, California, USA
+      - name: "Talk: Bottomonium suppression in p+Pb collisions at LHC energies"
+        date: "2025-01-13"
+        location: "Cold Nuclear Matter Effects: from the LHC to the EIC, Stony Brook, New York, USA"
+      - name: "Winter school: Quantum Error Suppression, Mitigation, and Correction"
+        date: "2025-02-03"
+        location: IPAM, UCLA, Los Angeles, California, USA
+      - name: "Contributed talks: Bottomonium suppression and feed-down fractions"
+        date: "2024-06-24"
+        location: HEFTY Summer School and Collaboration Meeting, Santa Fe, New Mexico, USA
+      - name: "Research talk: Bottomonium suppression in p+Pb collisions at LHC energies"
+        date: "2024-02-26"
+        location: Frontiers in Nuclear and Hadronic Physics, Florence, Italy
+
+    Awards:
+      - name: Graduate Student Senate Research Award
+        date: "2025"
+        summary: Kent State University award for research on quantum algorithms in high-energy physics and SU(2) lattice gauge theory.
+      - name: IBM Certified Associate Qiskit Developer
+        date: "2024"
+        summary: IBM Quantum certification.
+      - name: Global Quantum Scholarship
+        date: "2023"
+        summary: Awarded by QWorld.
+      - name: Golden Jubilee Scholarship
+        date: "2014"
+        summary: Indian Embassy, Kathmandu.
+
+    Training:
+      - name: Machine Learning for Fundamental Physics School
+        date: "2025"
+        summary: Lawrence Berkeley National Laboratory.
+      - name: APS Machine Learning Training
+        date: "2025"
+        summary: APS Division of Nuclear Physics meeting.
+      - name: Qiskit Global Summer School
+        date: "2023"
+      - name: Quantum Computing for Natural Sciences
+        date: "2023"
+        summary: With IBM Quantum.
+      - name: Introduction to Quantum Computing
+        date: "2022"
+        summary: The Coding School.
+      - name: IBM Quantum Challenge
+        date: "2024"
+      - name: IBM Quantum Challenge
+        date: "2023"
+        summary: Spring challenge.
+      - name: QBronze Quantum Computing Course
+        date: "2023"
+        summary: QWorld.
+
+    Leadership and Service:
+      - company: QNepal, QWorld Affiliate
+        position: Coordinator
+        start_date: "2023"
+        end_date: present
+        summary: Quantum-computing outreach and community learning programs.
+      - company: ASCOL Physics Society, Amrit Science Campus
+        position: Co-founder
+        start_date: "2014"
+        end_date: "2018"
+        location: Kathmandu, Nepal
+        summary: Organized talks and workshops introducing computational physics.
+
+    Skills:
+      - label: Programming
+        details: Python, C++, Mathematica, Qiskit
+      - label: Scientific computing
+        details: Numerical simulation, analysis, uncertainty propagation, and visualization
+      - label: Tools
+        details: Git, Linux, high-performance computing, and Slurm
+
+    Interests:
+      - label: Research
+        details: Nuclear and high-energy physics, heavy-ion collisions, heavy flavor, quarkonium, QCD matter, and quantum transport
+      - label: Exploring
+        details: AI for physics and science, AI safety, medical AI, quantum computing, and radiation physics

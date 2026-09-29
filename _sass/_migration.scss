@@ -1,0 +1,61 @@
+:root {
+  --global-theme-color: #7b1e3a;
+  --global-hover-color: #a83c5d;
+  --global-highlight-color: #b64b70;
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #e39ab1;
+  --global-hover-color: #f1b1c4;
+  --global-highlight-color: #e39ab1;
+}
+
+.event-type-badge {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0.5rem 0.35rem 0;
+  padding: 0.15rem 0.5rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  color: var(--global-theme-color);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.event-card {
+  margin: 0 0 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.event-card-image {
+  display: block;
+  width: min(100%, 28rem);
+  height: auto;
+  margin-bottom: 0.75rem;
+  border-radius: 4px;
+}
+
+.event-card h2 {
+  margin: 0.25rem 0 0.5rem;
+  font-size: 1.35rem;
+}
+
+.cv-cta {
+  display: inline-flex;
+  margin: 0.5rem 0;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 4px;
+  background: var(--global-theme-color);
+  color: #fff;
+  font-weight: 600;
+}
+
+.cv-cta:hover {
+  background: var(--global-hover-color);
+  color: #fff;
+  text-decoration: none;
+}

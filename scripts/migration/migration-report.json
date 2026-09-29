@@ -1,0 +1,134 @@
+{
+  "format": 1,
+  "sources_preserved": true,
+  "items": [
+    {
+      "source": "content/events/aps-global-physics-summit-2025/index.md",
+      "target": "_events/aps-global-physics-summit-2025.md",
+      "route": "/events/aps-global-physics-summit-2025/",
+      "event_type": "Conference",
+      "role": "Oral presentation",
+      "unmapped_frontmatter": [
+
+      ]
+    },
+    {
+      "source": "content/events/aps-tgh-workshop-2025/index.md",
+      "target": "_events/aps-tgh-workshop-2025.md",
+      "route": "/events/aps-tgh-workshop-2025/",
+      "event_type": "Workshop",
+      "role": "Oral presentation",
+      "unmapped_frontmatter": [
+
+      ]
+    },
+    {
+      "source": "content/events/cnm-lhc-to-eic-2025/index.md",
+      "target": "_events/cnm-lhc-to-eic-2025.md",
+      "route": "/events/cnm-lhc-to-eic-2025/",
+      "event_type": "Workshop",
+      "role": "Research talk",
+      "unmapped_frontmatter": [
+
+      ]
+    },
+    {
+      "source": "content/events/dnp-fall-meeting-2025/index.md",
+      "target": "_events/dnp-fall-meeting-2025.md",
+      "route": "/events/dnp-fall-meeting-2025/",
+      "event_type": "Conference",
+      "role": "Oral presentation",
+      "unmapped_frontmatter": [
+
+      ]
+    },
+    {
+      "source": "content/events/eic-summer-school-2026-stonybrook/index.md",
+      "target": "_events/eic-summer-school-2026-stonybrook.md",
+      "route": "/events/eic-summer-school-2026-stonybrook/",
+      "event_type": "Summer School",
+      "role": "Participation details not recorded",
+      "unmapped_frontmatter": [
+
+      ]
+    },
+    {
+      "source": "content/events/frontiers-nuclear-hadronic-2024/index.md",
+      "target": "_events/frontiers-nuclear-hadronic-2024.md",
+      "route": "/events/frontiers-nuclear-hadronic-2024/",
+      "event_type": "Summer School",
+      "role": "Research talk",
+      "unmapped_frontmatter": [
+
+      ]
+    },
+    {
+      "source": "content/events/graduate-research-symposium-2025/index.md",
+      "target": "_events/graduate-research-symposium-2025.md",
+      "route": "/events/graduate-research-symposium-2025/",
+      "event_type": "Symposium",
+      "role": "Poster presentation",
+      "unmapped_frontmatter": [
+
+      ]
+    },
+    {
+      "source": "content/events/hard-probes-2026/index.md",
+      "target": "_events/hard-probes-2026.md",
+      "route": "/events/hard-probes-2026/",
+      "event_type": "Conference",
+      "role": "Oral presentation",
+      "unmapped_frontmatter": [
+
+      ]
+    },
+    {
+      "source": "content/events/hefty-summer-school-2024/index.md",
+      "target": "_events/hefty-summer-school-2024.md",
+      "route": "/events/hefty-summer-school-2024/",
+      "event_type": "Summer School",
+      "role": "Contributed talks",
+      "unmapped_frontmatter": [
+
+      ]
+    },
+    {
+      "source": "content/events/ipam-winter-school-2025/index.md",
+      "target": "_events/ipam-winter-school-2025.md",
+      "route": "/events/ipam-winter-school-2025/",
+      "event_type": "Winter School",
+      "role": "Participant",
+      "unmapped_frontmatter": [
+
+      ]
+    },
+    {
+      "source": "content/events/nnpss-2026-seattle/index.md",
+      "target": "_events/nnpss-2026-seattle.md",
+      "route": "/events/nnpss-2026-seattle/",
+      "event_type": "Summer School",
+      "role": "Student talk",
+      "unmapped_frontmatter": [
+
+      ]
+    },
+    {
+      "source": "content/projects/bottomonium-oo-lhc/index.md",
+      "target": "_projects/bottomonium-oo-lhc.md",
+      "route": "/projects/bottomonium-oo-lhc/",
+      "status": "ongoing",
+      "unmapped_frontmatter": [
+
+      ]
+    },
+    {
+      "source": "content/projects/charmonium-oo-lhc-rhic/index.md",
+      "target": "_projects/charmonium-oo-lhc-rhic.md",
+      "route": "/projects/charmonium-oo-lhc-rhic/",
+      "status": "ongoing",
+      "unmapped_frontmatter": [
+
+      ]
+    }
+  ]
+}

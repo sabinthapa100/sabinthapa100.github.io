@@ -6,8 +6,10 @@ carries the same rules for Claude Code specifically.
 
 ## What this is
 
-Sabin Thapa's personal scientific website — Hugo + HugoBlox static site, deployed
-to GitHub Pages. A long-lived research/personal archive, not a résumé template.
+Sabin Thapa's personal scientific website — al-folio/Jekyll at the repository
+root, with Quartz 5 generating the `/notes/` digital garden. GitHub Actions
+composes both into one Pages artifact. It is a long-lived research/personal
+archive, not a résumé template.
 
 ## Where to look
 
@@ -16,6 +18,12 @@ to GitHub Pages. A long-lived research/personal archive, not a résumé template
   `FACT-RULES.md`, `DESIGN-RULES.md`, `GIT-WORKFLOW.md`.
 - `docs/` — the human-readable version of the same policies, plus setup/build
   instructions.
+- `_pages/`, `_events/`, `_projects/`, `_journey/` — active Jekyll content.
+- `_bibliography/papers.bib` — the one source of publication metadata;
+  `_data/cv.yml` is the structured public CV.
+- `quartz/content/` — only explicitly approved, public Notes content.
+- `scripts/migration/routes.json` — old-to-new route owners and destinations;
+  `scripts/build_all.sh` composes the site and verifies routes.
 
 ## Non-negotiable safety rules
 
@@ -27,7 +35,8 @@ to GitHub Pages. A long-lived research/personal archive, not a résumé template
    untracked personal/`vault`/`drafts` folder into this public repo.
 4. **Never run destructive git operations** (`reset --hard`, `push --force`,
    history rewrites) without explicit user instruction.
-5. Preserve existing URLs when moving content — use Hugo `aliases`.
+5. Preserve existing URLs when moving content — update
+  `scripts/migration/routes.json` and verify the generated redirect.
 
 Full detail lives in `.agent/` — read it before making structural or content
 changes.

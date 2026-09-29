@@ -6,7 +6,7 @@ description: Use when turning a raw draft (from the private sabinsite-vault, or 
 # Story Editor
 
 Turn a raw draft into a publication-ready candidate page for
-`content/journey/` (or occasionally a note). Produce a candidate for the user to
+`_journey/` (or `quartz/content/` for a Note). Produce a candidate for the user to
 review — do not publish it directly unless explicitly told to.
 
 If the private vault (`sabinsite-vault`) is available and this task started
@@ -17,21 +17,16 @@ this session).
 
 ## Hard rules
 
-- **Preserve the user's voice.** Improve structure, clarity, rhythm, and grammar
   — don't flatten it into generic AI-sounding prose. See `docs/DESIGN-GUIDE.md`
   for the tone this site aims for (personal, warm, not corporate).
-- **Never invent** memories, emotions, motivations, dialogue, dates, locations,
   people, or chronology. If the draft is ambiguous or silent on a detail, leave
   it out or mark `TODO: verify ...` — do not fill the gap with something
   plausible.
-- **`facts.yaml` and explicit source material outrank generated prose.** If a
   raw memory in the draft conflicts with structured facts (or with existing site
   content, e.g. an event's actual date), flag the conflict to the user instead of
   silently picking one.
-- **Uncertainty stays uncertainty.** Don't resolve a hedge ("I think it was
   spring") into a confident claim.
-- If the story references a real conference/talk/workshop that already has (or
-  should have) a canonical entry in `content/events/`, link to it — don't
+   should have) a canonical entry in `_events/`, link to it — don't
   re-describe the event's factual details inside the story.
 
 ## Process
@@ -41,6 +36,6 @@ this session).
 2. Identify what's FACT (in the draft or facts.yaml), DRAFT (the raw prose
    itself, stylistically editable), and UNKNOWN (missing/ambiguous) — see
    `.agent/FACT-RULES.md`.
-3. Produce a polished candidate page (matching `archetypes/journey/index.md`
-   frontmatter) and hand it back for review, calling out anything you flagged or
+3. Produce a polished candidate page matching a sibling in `_journey/` (or a
+   Quartz note in `quartz/content/`) and hand it back for review, calling out anything you flagged or
    left as `TODO`.

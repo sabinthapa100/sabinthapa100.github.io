@@ -1,13 +1,14 @@
 {
-  "name": "hugo-blox-academic-cv-starter",
+  "name": "sabinthapa100-academic-site",
   "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@10.14.0",
-  "description": "Academic CV starter template for Hugo Blox with Tailwind CSS v4",
+  "description": "al-folio/Jekyll academic site with a Quartz Notes garden; legacy Hugo tooling is retained for migration history",
   "scripts": {
-    "dev": "hugo server --disableFastRender",
-    "build": "hugo --minify && pnpm run pagefind",
-    "pagefind": "pagefind --site public"
+    "build": "bash scripts/build_all.sh",
+    "build:legacy-hugo": "hugo --minify",
+    "dev:legacy-hugo": "hugo server --disableFastRender",
+    "pagefind:legacy-hugo": "pagefind --site public"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.12",
