@@ -29,7 +29,7 @@ def main() -> int:
         if not source.is_file():
             failures.append(f"missing source route: {route['from']} -> {source}")
             continue
-        if route["owner"] in {"jekyll", "quartz"}:
+        if route["owner"] in {"jekyll", "quartz"} or not urlsplit(route["to"]).scheme:
             destination = output_for(route["to"])
             if not destination.is_file():
                 failures.append(f"missing destination: {route['to']} -> {destination}")

@@ -48,6 +48,11 @@
     { "from": "/notes/reading-reflections/", "to": "/notes/reading-reflections/", "owner": "quartz" },
     { "from": "/notes/ai/", "to": "/notes/computing-ai/", "owner": "redirect" },
     { "from": "/notes/computing/", "to": "/notes/computing-ai/", "owner": "redirect" },
+    { "from": "/physics/", "to": "/notes/physics/", "owner": "redirect" },
+    { "from": "/quantum/", "to": "/notes/quantum/", "owner": "redirect" },
+    { "from": "/high-energy-nuclear/", "to": "/notes/high-energy-nuclear/", "owner": "redirect" },
+    { "from": "/computing-ai/", "to": "/notes/computing-ai/", "owner": "redirect" },
+    { "from": "/reading-reflections/", "to": "/notes/reading-reflections/", "owner": "redirect" },
     { "from": "/authors/", "to": "/about/", "owner": "redirect" }
   ]
 }

@@ -19,7 +19,6 @@ are not active publishing locations.
 | About and CV | `_pages/about-profile.md`, `_pages/academic-record.md`, `_data/cv.yml` | Profile, structured academic record, and RenderCV-backed `/cv/`. No private reference details. |
 | Now | `_pages/now.md` | Current, dated update; not in primary navigation. |
 
-the biography blocks' `text: ''` override doesn't suppress it, it falls back to
 Public profile prose lives in `_pages/about-profile.md`, the academic record in
 `_pages/academic-record.md`, the structured CV in `_data/cv.yml`, and profile
 links in `_data/socials.yml`. Preserved Hugo author data is not the active
@@ -30,6 +29,14 @@ source for these pages.
 The primary navigation is Home, Research, Publications, Talks & Events, Notes,
 Journey, About. It is controlled by page metadata in `_pages/`; Projects and
 Now remain outside the primary navigation. `/notes/` is the Quartz homepage.
+
+## URL routing
+
+Keep legacy and compatibility paths in `scripts/migration/routes.json`. The
+build generates redirects and verifies their sources and internal destinations.
+Quartz AliasRedirects emits `.html` aliases, while its Explorer plugin currently
+uses root-relative hub links; both cases use explicit static redirects to the
+canonical `/notes/` pages.
 
 ## Math and video
 
