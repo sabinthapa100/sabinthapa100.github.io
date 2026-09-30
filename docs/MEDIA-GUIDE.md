@@ -11,10 +11,9 @@ live.
 Descriptive, kebab-case filenames: `kent-physics-building-2019.webp`,
 `ggi-florence-talk-2024.webp` — never `IMG_3281.jpg`, `final2.jpg`, `newnew.jpg`.
 
-A page bundle's primary/representative image is conventionally named
-`featured.<ext>` (this is auto-picked-up as the card image by HugoBlox
-templates). Additional images can go in a `gallery/` or `figures/` subfolder
-within the same page bundle.
+Use images under `assets/img/` and refer to them explicitly from Jekyll or Quartz
+content. Event listing cards use the `image` field in `_events/` frontmatter;
+provide a descriptive alt value or use the event title as the fallback.
 
 ## Optimization and privacy
 
@@ -26,5 +25,6 @@ within the same page bundle.
 
 ## Author/profile images
 
-`assets/media/authors/` holds the profile photos referenced by
-`data/authors/me.yaml`. Don't add unrelated images there.
+`assets/img/profile/` holds the al-folio profile image. The original Hugo author
+media remains under `assets/media/authors/` as preserved migration source; do
+not treat it as the active profile path.

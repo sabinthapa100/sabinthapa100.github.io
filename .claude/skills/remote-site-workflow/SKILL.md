@@ -22,8 +22,10 @@ applied consistently regardless of which one you're on.
    Never work directly on `main`.
 5. **Edit** — using `site-maintainer` or `content-updater` as appropriate
    for the change.
-6. **Validate** — `pnpm install --frozen-lockfile && hugo --minify
-   --cleanDestinationDir`. Confirm 0 errors before going further.
+6. **Validate** — install Jekyll with `bundle install`, Quartz with
+   `npm ci --prefix quartz`, then run `bash scripts/build_all.sh`. Confirm the
+   route checks pass. If local Ruby headers prevent installation, require the
+   GitHub Actions build to pass before opening or updating the PR.
 7. **Inspect the diff** — `git diff` / `git status` — stage specific files,
    never `git add -A` on this repo (see `.agent/GIT-WORKFLOW.md` for why).
 8. **Commit** — Conventional Commits, one logical change per commit.

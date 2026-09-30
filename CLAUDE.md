@@ -1,35 +1,39 @@
 # CLAUDE.md
 
-This repo is Sabin Thapa's personal scientific website: Hugo + HugoBlox, deployed
-to GitHub Pages at sabinthapa100.github.io. It is a long-lived research/personal
-archive (research, publications, talks & events, notes, journey, about) — not a
-résumé template and not a startup landing page.
+This repo is Sabin Thapa's personal scientific website, deployed to GitHub Pages
+at sabinthapa100.github.io. The main site uses al-folio/Jekyll; Quartz 5 builds
+the digital garden at `/notes/`. GitHub Actions composes one artifact. This is a
+long-lived research/personal archive, not a résumé template or startup landing page.
 
 ## Architecture
 
-- `content/` — page bundles. Sections: `research/`, `publications/`, `events/`
-  (nav label "Talks & Events"), `notes/` (five hubs — physics, quantum,
-  high-energy-nuclear, computing-ai, reading-reflections), `journey/` (grouped
-  by `era:`), `about/` (a branch bundle with an `academic-record/` subpage),
-  `now/`, `projects/`. One real event = one entry in `content/events/`; never
-  duplicate it elsewhere. Primary nav is five items — Home/Research/Notes/
-  Journey/About — with Research and Notes as real dropdowns (Hugo's native
-  menu `parent:` field in `config/_default/menus.yaml`, no template work
-  needed for a new entry).
-- `data/authors/me.yaml` — the single source of truth for bio/education/links.
-- `config/_default/` — `menus.yaml` (nav), `params.yaml` / `hugoblox.yaml`
-  (site identity/theme).
-- `archetypes/` — starting frontmatter for `event`, `publication`, `project`,
-  `note`, `journey`. Use these when adding content.
+- `_pages/` — stable main-site pages and primary navigation.
+- `_events/`, `_projects/`, `_journey/` — canonical Jekyll collections.
+- `_bibliography/papers.bib` — single publication metadata source;
+  `_data/cv.yml` is the structured RenderCV source at `/cv/`.
+- `_data/socials.yml` — al-folio profile links.
+- `quartz/content/` — the public Notes garden. `reference-shelf.md` defines
+  verified source IDs; `templates/` is ignored by Quartz and contains authoring
+  templates. Never place private drafts here.
+- Technical Notes are source-first: identify sources and sections actually read,
+  then study/derive/compute before drafting. Use `note_type`, maturity `status`,
+  and `source_basis`; do not write mini-textbooks from model memory alone.
+  “Study this” never means publish; publication requires explicit intent.
+- `scripts/migration/routes.json` — old-to-new route mappings and redirect
+  owners; Hugo-era files are preserved migration sources, not active content.
 - Full details: `docs/SITE-ARCHITECTURE.md`, `docs/CONTENT-GUIDE.md`.
 
 ## Build / dev
 
 ```bash
-pnpm install
-hugo server --disableFastRender   # dev
-hugo --minify                     # production build (matches CI)
+bundle install
+npm ci --prefix quartz
+bash scripts/build_all.sh
 ```
+
+Prerequisites: Ruby 3.2.3 and Node 22/npm 10.9.2 or later. If local Ruby
+development headers prevent Jekyll installation, GitHub Actions is the
+authoritative build and route-validation environment.
 
 ## Git workflow
 

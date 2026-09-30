@@ -4,8 +4,10 @@ A polished wrong website is worse than an incomplete correct one. Every claim
 about Sabin's biography, research, or career belongs to one of four categories —
 keep them distinct and never silently convert one into another:
 
-- **FACT** — stated in `data/authors/me.yaml`, an existing content page, or given
-  directly by the user in the current conversation.
+- **FACT** — stated in `_data/cv.yml`, an existing active page or collection
+  (`_pages/`, `_events/`, `_projects/`, `_journey/`, or `quartz/content/`), or
+  given directly by the user in the current conversation. Preserved Hugo sources
+  may corroborate a fact but are not the active publishing record.
 - **INFERENCE** — a reasonable restatement of a FACT (e.g. rewording a sentence),
   not a new claim.
 - **DRAFT** — user-provided raw material not yet verified/finalized (e.g. from the

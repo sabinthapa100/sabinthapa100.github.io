@@ -2,37 +2,39 @@
 
 Source for [sabinthapa100.github.io](https://sabinthapa100.github.io) — a
 long-lived personal scientific website: research, publications, talks & events,
-notes, journey, and about. Built with Hugo + [HugoBlox](https://hugoblox.com).
+notes, journey, and about. Built with al-folio/Jekyll, with Quartz 5 under
+`/notes/`.
 
 ## Structure
 
 ```text
-content/
-├── research/       "What I Work On" + a separate Explorations area
-├── projects/        Concrete research/software projects
-├── publications/    Formal scholarly outputs
-├── events/          Talks, conferences, workshops, schools (nav: "Talks & Events")
-├── notes/           Long-term notebook: physics, quantum, high-energy-nuclear,
-│                     computing-ai, reading-reflections
-├── journey/         Personal/scientific chronology, grouped by era
-├── about/           Coherent public profile + academic-record subpage
-└── now/             What I'm doing right now
+_pages/               Main pages and stable routes
+_events/              Canonical talks, conferences, schools, and symposia
+_projects/            Research and software projects
+_journey/             Verified public chronology
+_bibliography/         Single BibTeX source for publications
+_data/cv.yml           Structured RenderCV CV at /cv/
+quartz/content/         Public Notes garden (five hubs)
+scripts/migration/      Route map, converters, redirect and route checks
+scripts/build_all.sh    Composed Jekyll + Quartz build
 ```
 
-Primary nav is five items — Home / Research / Notes / Journey / About — with
-Research and Notes as dropdowns.
+The primary navigation is Home / Research / Publications / Talks & Events /
+Notes / Journey / About. Both generators feed one `_site/` Pages artifact;
+Hugo-era source directories are preserved during migration validation but are
+not active content locations.
 
 Full architecture: [docs/SITE-ARCHITECTURE.md](docs/SITE-ARCHITECTURE.md).
 How to add/update content: [docs/CONTENT-GUIDE.md](docs/CONTENT-GUIDE.md).
 
 ## Local development
 
-Prerequisites: Hugo extended, Node.js + pnpm.
+Prerequisites: Ruby 3.2.3, Node.js 22, npm 10.9.2 or later.
 
 ```bash
-pnpm install
-hugo server --disableFastRender   # http://localhost:1313
-hugo --minify                     # production build, matches CI
+bundle install
+npm ci --prefix quartz
+bash scripts/build_all.sh
 ```
 
 ## AI agent workflow
@@ -57,13 +59,9 @@ invented. See [`.agent/FACT-RULES.md`](.agent/FACT-RULES.md).
 
 - CI build on pull requests: [`.github/workflows/build.yml`](.github/workflows/build.yml)
 - Auto deploy on push to `main`: [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
-- HugoBlox framework upgrades: manual only
-  ([`.github/workflows/upgrade.yml`](.github/workflows/upgrade.yml),
-  `workflow_dispatch`) — see `docs/SITE-ARCHITECTURE.md` for the procedure.
-- Publication import from BibTeX: manual only
-  ([`.github/workflows/import-publications.yml`](.github/workflows/import-publications.yml)),
-  currently has a path mismatch with the real `content/publications/` structure —
-  see the workflow file's comments before re-enabling automatic triggering.
+- Build uses Ruby 3.2 and Node 22, composes Jekyll and Quartz into `_site/`,
+  checks migrated routes, and uploads one artifact. Pull requests build only;
+  pushes to `main` deploy to Pages.
 
 ## Git workflow
 

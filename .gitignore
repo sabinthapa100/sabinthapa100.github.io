@@ -8,6 +8,7 @@
 
 # Generated site output
 public/
+_site/
 
 # Hugo resources (processed assets)
 resources/
@@ -27,6 +28,12 @@ hugo_stats.json
 
 # Dependencies
 node_modules/
+vendor/bundle/
+__pycache__/
+
+# Quartz-generated plugin cache and build output
+quartz/.quartz/
+quartz/public/
 
 # ============================================================================
 # Personal / non-site files

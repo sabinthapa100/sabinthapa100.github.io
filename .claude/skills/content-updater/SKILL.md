@@ -11,33 +11,35 @@ instead. For turning a private raw draft into public prose, use `story-editor`.
 
 ## Process
 
-1. **Pick the right content type** — event, publication, project, note, or
-   journey entry. See `.agent/ARCHITECTURE.md` if unsure which section it
-   belongs in (in particular: a talk/conference/workshop is always an `events/`
-   entry — never duplicated into Journey or elsewhere).
-2. **Check for an existing canonical entry first.** Search `content/<section>/`
-   for anything covering the same real-world talk/paper/project before creating a
-   new one — update in place if found.
-3. **Start from the archetype**: `archetypes/events/index.md`,
-   `archetypes/publications/index.md`, `archetypes/projects/index.md`,
-   `archetypes/notes/index.md`, or `archetypes/journey/index.md`.
+1. **Pick the right source** — `_events/`, `_projects/`, `_journey/`, the single
+   `_bibliography/papers.bib`, or `quartz/content/` for Notes. Page-level content
+   belongs in `_pages/`. See `.agent/ARCHITECTURE.md`.
+2. **Check for an existing canonical entry first.** A talk/conference/workshop
+   has one `_events/` record; a publication has one BibTeX entry.
+3. **Follow a sibling entry's schema and style** before adding frontmatter or
+   markup; Hugo-era files and archetypes are archived sources, not templates.
 4. **Fill in only what's given.** Anything not stated by the user or found in an
    existing repo file gets `TODO: verify ...` — never guessed. If the user gives
    you a URL for the item (e.g. a conference page), fetching it to confirm a date
    or title is verification, not invention — do that rather than leaving an
    avoidable TODO. Full rules: `.agent/FACT-RULES.md`.
-5. **Respect metadata over folder structure** — e.g. a project's lifecycle is
-   `status: ongoing`/`completed`/`exploration` in frontmatter, never a
-   `current/`/`old/` folder. A note's hub is its `area:` field, not a new
-   sub-folder; it can carry several `topics: []`.
-6. **Media**: descriptive kebab-case filenames, primary image named
-   `featured.<ext>` in the page bundle, no giant unoptimized originals, no
-   unnecessary EXIF/GPS. See `docs/MEDIA-GUIDE.md`.
-7. **Keep `date` and `lastmod` current on every touch.** The homepage's
-   "Recent Updates" collection sorts by `date` across Notes/Journey/Events/
-   Publications/Projects — an edit that doesn't bump it won't surface there.
-8. **Validate**: run `hugo --minify` (or `hugo server`) and confirm the new/
-   updated page builds and appears in its section listing.
+5. **Respect metadata over folder structure** — project lifecycle is status
+   metadata, never a `current/` or `old/` folder. Quartz notes use their hub
+   directory and Obsidian-style frontmatter.
+6. **For a technical Note, identify a source spine before drafting.** Prefer
+   canonical textbooks/papers and official institutional material; record
+   actual sources used in `source_basis` via IDs from `quartz/content/reference-shelf.md`.
+   Do not write a mini-textbook from model memory alone.
+7. **Use note maturity metadata**: `note_type` and `status` (`seed`, `studying`,
+   `developed`, `reviewed`, or `reference`). `last_verified` is for evolving
+   software, APIs, or current factual claims, not a fake freshness date.
+8. **Media**: use descriptive kebab-case filenames, optimize for the web, and
+   strip unnecessary EXIF/GPS. See `docs/MEDIA-GUIDE.md`.
+9. **Keep dates and routes accurate.** Preserve published URLs; record any
+   legacy redirect in `scripts/migration/routes.json`.
+10. **Validate** with `bash scripts/build_all.sh` when local Ruby dependencies
+   are available, then confirm the item appears in its section. GitHub Actions
+   is the authoritative build when local Ruby headers are unavailable.
 
 ## Guardrails
 

@@ -62,6 +62,32 @@ work/journey/coming-to-the-united-states/
   `publish-to-site` skill: a content branch here, a build, a review, a
   push, a PR — never a direct merge. See `docs/MOBILE-WORKFLOW.md`.
 
+## Source-first Note contract
+
+The private vault's `develop-note` and `publish-to-site` workflows should follow
+this progression for technical Notes:
+
+```text
+CAPTURE → SOURCE → STUDY → DERIVE / COMPUTE → DRAFT → VERIFY → PUBLISH
+```
+
+- “I want to study X” creates a private source plan and learning checklist; it
+  does not create public prose.
+- Use canonical textbooks/papers and expert lecture notes first, then official
+  institutional material and substantial maintained courses/tutorials. Blogs
+  are supplementary only.
+- Record the exact sections read, derivations attempted, code/experiments run,
+  results, assumptions, and unresolved questions in the private work item.
+- A technical draft uses source IDs from the public
+  `quartz/content/reference-shelf.md` when applicable and lists only sources
+  actually consulted. Do not copy source prose or write from model memory alone.
+- Use note maturity (`seed`, `studying`, `developed`, `reviewed`, `reference`)
+  to describe the note, not the author's expertise. A seed can be a roadmap or
+  TODO skeleton; it must not pretend the subject is learned.
+- “Turn what we learned into a Note” produces a private, source-linked draft.
+  Only a separate explicit “publish” request may copy its verified publish-ready
+  version into `quartz/content/`.
+
 ## Status
 
 Created and in active use (home server, `/home/sabin/sabinsite-vault`).

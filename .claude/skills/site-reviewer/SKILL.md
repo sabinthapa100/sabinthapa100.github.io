@@ -10,19 +10,20 @@ fixing them**, unless explicitly asked to fix them too.
 
 ## Checklist
 
-- **Build**: `hugo --minify` succeeds with no errors.
-- **Navigation**: primary menu matches `.agent/ARCHITECTURE.md` (Home /
-  Research / Notes / Journey / About, with Research and Notes as dropdowns),
-  correct order, dropdown children correct, no broken links, and each
-  dropdown's top-level label stays independently clickable (not toggle-only).
+- **Build**: `bash scripts/build_all.sh` succeeds; CI uploads one composed
+  `_site/` artifact. If local Ruby dependencies are unavailable, require a
+  green GitHub Actions build before publication.
+- **Navigation and routes**: primary nav matches `.agent/ARCHITECTURE.md`;
+  `scripts/migration/check_routes.py` passes for Jekyll, Quartz, and legacy
+  redirects.
 - **Duplicate content**: no event/publication/project represented as two
   canonical entries in different sections.
-- **Metadata consistency**: required frontmatter present (title, date, and the
-  section-specific fields used elsewhere in that section); no leftover
-  placeholder values.
-- **Factual claims**: anything that reads as a claim (achievement, expertise,
-  role, result) is traceable to `data/authors/me.yaml`, an existing page, or an
-  explicit source — flag anything that isn't, per `.agent/FACT-RULES.md`.
+- **Metadata consistency**: events include verified event type and role;
+  publications use unique entries in `_bibliography/papers.bib`; CV data in
+  `_data/cv.yml` passes RenderCV validation; no template placeholders remain.
+- **Factual claims**: trace claims to `_pages/`, `_events/`, `_projects/`,
+  `_journey/`, `_data/cv.yml`, or an explicit source. Flag anything that isn't,
+  per `.agent/FACT-RULES.md`.
 - **Privacy**: no accidentally-committed private-vault drafts, no personal files
   that don't belong in a public repo (check untracked files too, not just staged
   ones), no unnecessary EXIF/GPS in images.
@@ -30,10 +31,10 @@ fixing them**, unless explicitly asked to fix them too.
   `IMG_####`/`Screenshot ...`-style names.
 - **Outdated status**: no project/page whose `status:` no longer matches reality
   as far as you can tell from repo content.
-- **Résumé duplication**: no page reproducing the full CV verbatim outside of the
-  actual CV PDF download.
-- **Accessibility / mobile basics**: images have alt text where the theme
-  supports it, no obviously broken responsive layout.
+- **Résumé duplication**: no page reproduces the full CV outside the canonical
+  structured `/cv/` page.
+- **Accessibility / mobile basics**: images have alt text, responsive layouts
+  work at desktop, tablet, and phone widths, and no content overlaps.
 - **AI-style filler prose**: flag generic, padded, or overly promotional
   language that doesn't match the site's plain, personal tone.
 

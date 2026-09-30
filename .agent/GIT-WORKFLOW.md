@@ -11,6 +11,9 @@
 - Stage specific files by name (`git add path/to/file`) rather than `git add -A`
   or `git add .`, especially since this repo's working tree can carry unrelated
   filesystem noise (e.g. mode-bit changes) that shouldn't ride along in a commit.
-- HugoBlox framework/theme upgrades are deliberate, manual maintenance
-  (`workflow_dispatch` on `.github/workflows/upgrade.yml`), never an unattended
-  weekly job — see `docs/SITE-ARCHITECTURE.md` for the manual upgrade procedure.
+- `main` is the production site. Site changes go through a feature branch and
+  PR; never merge or trigger production deployment without explicit user
+  approval.
+- Stage only reviewed paths. Never stage `.claude/logs/`, private-vault
+  material, or generated `_site/`, `quartz/public/`, and
+  `quartz/node_modules/` output.
