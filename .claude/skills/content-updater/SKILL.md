@@ -26,11 +26,18 @@ instead. For turning a private raw draft into public prose, use `story-editor`.
 5. **Respect metadata over folder structure** — project lifecycle is status
    metadata, never a `current/` or `old/` folder. Quartz notes use their hub
    directory and Obsidian-style frontmatter.
-6. **Media**: use descriptive kebab-case filenames, optimize for the web, and
+6. **For a technical Note, identify a source spine before drafting.** Prefer
+   canonical textbooks/papers and official institutional material; record
+   actual sources used in `source_basis` via IDs from `quartz/content/reference-shelf.md`.
+   Do not write a mini-textbook from model memory alone.
+7. **Use note maturity metadata**: `note_type` and `status` (`seed`, `studying`,
+   `developed`, `reviewed`, or `reference`). `last_verified` is for evolving
+   software, APIs, or current factual claims, not a fake freshness date.
+8. **Media**: use descriptive kebab-case filenames, optimize for the web, and
    strip unnecessary EXIF/GPS. See `docs/MEDIA-GUIDE.md`.
-7. **Keep dates and routes accurate.** Preserve published URLs; record any
+9. **Keep dates and routes accurate.** Preserve published URLs; record any
    legacy redirect in `scripts/migration/routes.json`.
-8. **Validate** with `bash scripts/build_all.sh` when local Ruby dependencies
+10. **Validate** with `bash scripts/build_all.sh` when local Ruby dependencies
    are available, then confirm the item appears in its section. GitHub Actions
    is the authoritative build when local Ruby headers are unavailable.
 

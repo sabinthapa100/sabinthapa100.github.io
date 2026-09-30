@@ -46,6 +46,15 @@ def main() -> int:
         "now/index.html",
         "notes/index.html",
         "notes/quantum/index.html",
+        "notes/reference-shelf/index.html",
+        "notes/conventions/index.html",
+        "notes/quantum/quantum-mechanics/index.html",
+        "notes/quantum/quantum-field-theory/index.html",
+        "notes/quantum/open-quantum-systems/index.html",
+        "notes/quantum/quantum-computing-information/index.html",
+        "notes/quantum/quantum-mechanics/density-matrices-and-mixed-states/index.html",
+        "notes/high-energy-nuclear/quantum-chromodynamics/index.html",
+        "notes/computing-ai/parallel-programming/index.html",
         "events/hard-probes-2026/index.html",
         "publications/upsilon-oo-lhc-2026/index.html",
     ]:
@@ -57,6 +66,12 @@ def main() -> int:
         failures.append("missing Quartz content index for root-relative Graph/Explorer requests")
     elif notes_index.read_bytes() != shared_index.read_bytes():
         failures.append("root and /notes/ Quartz content indexes differ")
+    for page in (SITE / "notes").rglob("*.html"):
+        if page.name in {"index.html", "404.html"}:
+            continue
+        clean_url = page.with_suffix("") / "index.html"
+        if not clean_url.is_file():
+            failures.append(f"missing clean Quartz route for /{page.relative_to(SITE)}")
     if failures:
         print("Route validation failed:")
         print("\n".join(f"- {failure}" for failure in failures))

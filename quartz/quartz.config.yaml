@@ -47,7 +47,6 @@ plugins:
       priority:
         - frontmatter
         - git
-        - filesystem
     order: 10
   - source: github:quartz-community/syntax-highlighting
     enabled: true
@@ -216,6 +215,10 @@ plugins:
         - description
         - tags
         - aliases
+        - note_type
+        - status
+        - source_basis
+        - last_verified
       excludedProperties: []
       hidePropertiesView: false
       delimiters: ---

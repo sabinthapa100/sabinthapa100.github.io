@@ -13,9 +13,13 @@ Phone idea
     ↓
 Private capture (vault, immutable, timestamped)
     ↓
-Develop (optional — build a draft from one or more captures)
+Source plan (for a technical Note: identify canonical/official sources)
     ↓
-Prepare (optional — fact-check, produce a publish-ready version)
+Study / derive / compute (private; record provenance and questions)
+    ↓
+Draft (private, source-linked, fact-checked)
+    ↓
+Prepare (review maturity, facts, links, and media)
     ↓
 Explicit "publish this" / "put this on my website"
     ↓
@@ -39,14 +43,18 @@ push, never an automatic merge.
 | You say (roughly) | What happens | Touches this repo? |
 | --- | --- | --- |
 | "Remember this...", "I just realized...", "Save this" | Capture: raw words preserved verbatim, timestamped, privately | No |
-| "Work on that story", "organize those thoughts" | Develop: draft built from captures in the vault | No |
-| "Prepare this for Journey/Notes" | Prepare: fact-checked publish-ready version in the vault | No |
+| "I want to study X", "help me learn this" | Create a private source plan and learning checklist; do not draft or publish a textbook-style answer | No |
+| "Work through this derivation/experiment" | Study, derive, or compute privately; record sources, assumptions, results, and open questions | No |
+| "Turn what we learned into a Note" | Draft in the vault from actual study work; include provenance and unresolved questions | No |
+| "Prepare this for Journey/Notes" | Fact-check, review sources, and produce a publish-ready candidate in the vault | No |
 | "Put this on my website", "publish this" | Publish: branch + page + build + review + push + PR here | Yes — branch + PR only |
 | "Publish it live" (after a green PR exists) | Merge the specific content PR, verify deployment | Yes — merge |
 | "Add this to my existing story about X" | Update: find the canonical work item / public page, don't duplicate | Depends on which stage |
 
 If intent is ambiguous, the default is capture-only. Publishing is always a
 deliberate, explicit step — never inferred from a casual mention.
+
+For technical Notes, the progression is **CAPTURE → SOURCE → STUDY → DERIVE / COMPUTE → DRAFT → VERIFY → PUBLISH**. “Study this” and “turn what we learned into a Note” never authorize copying material into `quartz/content/`; publication requires a separate explicit request.
 
 ## What you can safely do without a local build
 

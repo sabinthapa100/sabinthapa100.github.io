@@ -12,10 +12,15 @@ long-lived research/personal archive, not a résumé template or startup landing
 - `_bibliography/papers.bib` — single publication metadata source;
   `_data/cv.yml` is the structured RenderCV source at `/cv/`.
 - `_data/socials.yml` — al-folio profile links.
-- `quartz/content/` — the five public Notes hubs. Do not place private drafts here.
+- `quartz/content/` — the public Notes garden. `reference-shelf.md` defines
+  verified source IDs; `templates/` is ignored by Quartz and contains authoring
+  templates. Never place private drafts here.
+- Technical Notes are source-first: identify sources and sections actually read,
+  then study/derive/compute before drafting. Use `note_type`, maturity `status`,
+  and `source_basis`; do not write mini-textbooks from model memory alone.
+  “Study this” never means publish; publication requires explicit intent.
 - `scripts/migration/routes.json` — old-to-new route mappings and redirect
   owners; Hugo-era files are preserved migration sources, not active content.
-- Full details: `docs/SITE-ARCHITECTURE.md`, `docs/CONTENT-GUIDE.md`.
 - Full details: `docs/SITE-ARCHITECTURE.md`, `docs/CONTENT-GUIDE.md`.
 
 ## Build / dev

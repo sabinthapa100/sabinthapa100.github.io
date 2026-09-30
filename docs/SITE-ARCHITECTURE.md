@@ -19,6 +19,36 @@ are not active publishing locations.
 | About and CV | `_pages/about-profile.md`, `_pages/academic-record.md`, `_data/cv.yml` | Profile, structured academic record, and RenderCV-backed `/cv/`. No private reference details. |
 | Now | `_pages/now.md` | Current, dated update; not in primary navigation. |
 
+## Notes Paths
+
+The five top-level Quartz hubs are stable. Their initial paths are:
+
+- **Quantum** — Quantum Mechanics; Quantum Field Theory; Open Quantum Systems; Quantum Computing & Information.
+- **High-Energy & Nuclear Physics** — Inside the Nucleus; Particles, Fields & Fundamental Symmetries; Quantum Chromodynamics; Partons & High-Energy Scattering; QCD Matter at Extreme Conditions; Heavy Flavor & Probes; Theorist / Phenomenologist Toolkit.
+- **Computing & AI** — Scientific Computing & HPC Foundations; Parallelism & GPU Acceleration; Classical AI, Search & Optimization; Modern Machine Learning; Scientific Machine Learning; Practical AI Systems.
+- **General Physics** — Mechanics; Electrodynamics; Statistical Mechanics and Non-Equilibrium; Relativity; Condensed Matter.
+- **Reading & Reflections** — source-linked reading records and reflections.
+
+`quartz/content/reference-shelf.md` registers verified source IDs.
+`quartz/content/templates/` contains Quartz-ignored authoring templates, not
+public pages. Add deeper topics as notes/tags unless a stable learning path
+merits a folder index.
+
+## Notes hierarchy
+
+The five top-level Quartz hubs are stable. Their initial paths are:
+
+- **Quantum** — Quantum Mechanics; Quantum Field Theory; Open Quantum Systems; Quantum Computing & Information.
+- **High-Energy & Nuclear Physics** — Inside the Nucleus; Particles, Fields & Fundamental Symmetries; Quantum Chromodynamics; Partons & High-Energy Scattering; QCD Matter at Extreme Conditions; Heavy Flavor & Probes; Theorist / Phenomenologist Toolkit.
+- **Computing & AI** — Scientific Computing & HPC Foundations; Parallelism & GPU Acceleration; Classical AI, Search & Optimization; Modern Machine Learning; Scientific Machine Learning; Practical AI Systems.
+- **General Physics** — Mechanics; Electrodynamics; Statistical Mechanics and Non-Equilibrium; Relativity; Condensed Matter.
+- **Reading & Reflections** — source-linked reflections and reading records.
+
+`quartz/content/reference-shelf.md` registers a small set of verified source IDs;
+`quartz/content/templates/` contains ignored authoring templates, not public
+pages. Add deeper topics as notes/tags unless a stable learning path merits a
+folder index.
+
 Public profile prose lives in `_pages/about-profile.md`, the academic record in
 `_pages/academic-record.md`, the structured CV in `_data/cv.yml`, and profile
 links in `_data/socials.yml`. Preserved Hugo author data is not the active

@@ -14,6 +14,8 @@ async function mouseEnterHandler(
     return
   }
 
+  let popoverInner: HTMLElement | null = null
+
   async function setPosition(popoverElement: HTMLElement) {
     const { x, y } = await computePosition(link, popoverElement, {
       strategy: "fixed",
@@ -31,8 +33,8 @@ async function mouseEnterHandler(
 
     if (hash !== "") {
       const targetAnchor = `#popover-internal-${hash.slice(1)}`
-      const heading = popoverInner.querySelector(targetAnchor) as HTMLElement | null
-      if (heading) {
+      const heading = popoverInner?.querySelector(targetAnchor) as HTMLElement | null
+      if (heading && popoverInner) {
         // leave ~12px of buffer when scrolling to a heading
         popoverInner.scroll({ top: heading.offsetTop - 12, behavior: "instant" })
       }
@@ -47,8 +49,11 @@ async function mouseEnterHandler(
   const prevPopoverElement = document.getElementById(popoverId)
 
   // dont refetch if there's already a popover
-  if (!!document.getElementById(popoverId)) {
-    showPopover(prevPopoverElement as HTMLElement)
+  if (prevPopoverElement) {
+    popoverInner = prevPopoverElement.querySelector(".popover-inner")
+    if (popoverInner) {
+      showPopover(prevPopoverElement)
+    }
     return
   }
 
@@ -63,7 +68,7 @@ async function mouseEnterHandler(
   const popoverElement = document.createElement("div")
   popoverElement.id = popoverId
   popoverElement.classList.add("popover")
-  const popoverInner = document.createElement("div")
+  popoverInner = document.createElement("div")
   popoverInner.classList.add("popover-inner")
   popoverInner.dataset.contentType = contentType ?? undefined
   popoverElement.appendChild(popoverInner)

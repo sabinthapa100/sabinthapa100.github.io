@@ -17,17 +17,22 @@ this session).
 
 ## Hard rules
 
-  — don't flatten it into generic AI-sounding prose. See `docs/DESIGN-GUIDE.md`
-  for the tone this site aims for (personal, warm, not corporate).
-  people, or chronology. If the draft is ambiguous or silent on a detail, leave
-  it out or mark `TODO: verify ...` — do not fill the gap with something
-  plausible.
-  raw memory in the draft conflicts with structured facts (or with existing site
-  content, e.g. an event's actual date), flag the conflict to the user instead of
-  silently picking one.
-  spring") into a confident claim.
-   should have) a canonical entry in `_events/`, link to it — don't
-  re-describe the event's factual details inside the story.
+- **Preserve the user's voice.** Improve structure, clarity, rhythm, and grammar;
+   do not flatten the draft into generic prose. See `docs/DESIGN-GUIDE.md`.
+- **Never invent** memories, emotions, motivations, dialogue, dates, locations,
+   people, or chronology. If a detail is missing or uncertain, leave it out or
+   mark `TODO: verify ...`.
+- **Respect provenance.** Explicit facts and source material outrank generated
+   prose. Flag conflicts with existing pages or canonical event dates.
+- **Keep uncertainty explicit.** Do not turn a hedge into a confident claim.
+- **Link canonical events.** If a story references an event in `_events/`, link
+   it rather than duplicating its factual details.
+- **Notes are source-first.** For a technical Note, identify a source spine and
+   the actual question/learning goal before drafting. Capture which sections
+   were consulted. Do not produce a mini-textbook from model memory alone.
+- **Study is not publication.** A request to learn or capture an idea creates a
+   private study plan or draft; only an explicit publish request moves verified
+   material into `quartz/content/`.
 
 ## Process
 

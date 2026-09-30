@@ -11,16 +11,23 @@
    one `_events/` record; publications live in the single BibTeX file.
 4. Fill in only what you actually know. See `FACT-RULES.md` for what to do with
    the rest.
-5. Use descriptive kebab-case filenames and web-optimized images. Strip
+5. **Technical Notes are source-first.** Select a canonical or institutional
+   source spine before drafting. Record the source IDs from `Reference Shelf`
+   and the exact sections consulted. Model memory alone is not a source.
+6. Use Quartz metadata: `note_type`, `status` (`seed`, `studying`, `developed`,
+   `reviewed`, or `reference`), and `source_basis`. Use `last_verified` only for
+   evolving software/APIs or current factual claims.
+7. Use descriptive kebab-case filenames and web-optimized images. Strip
    unnecessary EXIF/GPS metadata before publishing.
-6. Preserve existing URLs. Add redirects to `scripts/migration/routes.json`.
-7. Run `bash scripts/build_all.sh` when local Ruby dependencies are available;
+8. Preserve existing URLs. Add redirects to `scripts/migration/routes.json`.
+9. Run `bash scripts/build_all.sh` when local Ruby dependencies are available;
    otherwise rely on GitHub Actions and do not claim a local build passed.
 
 ## What NOT to do
 
-- Don't fabricate content to fill an empty section — don't create placeholder
-   Notes or Journey entries.
+- Don't fabricate prose to make a section look complete. A clearly labeled
+   `seed` roadmap/skeleton with source plan, questions, and TODOs is acceptable;
+   it must not pretend technical material has been learned or verified.
 - Don't turn a real event into a full narrative in `journey/` unless there's
   genuinely separate personal reflection worth telling — otherwise the event page
   alone is enough.

@@ -4,6 +4,14 @@ description: Quantum mechanics, quantum field theory, open systems, and quantum 
 tags:
   - quantum
   - open-quantum-systems
+note_type: hub
 ---
 
-A home for notes on quantum mechanics, quantum field theory, open quantum systems, quantum information, and quantum computing. This includes learning notes and derivations, not claims of expertise.
+A learning path from quantum foundations to fields, open systems, and computation. Notes will grow from specific readings, derivations, and checks; this hub does not imply expertise in every listed area.
+
+## Stable paths
+
+- [[quantum/quantum-mechanics/index|Quantum Mechanics]]
+- [[quantum/quantum-field-theory/index|Quantum Field Theory]]
+- [[quantum/open-quantum-systems/index|Open Quantum Systems]]
+- [[quantum/quantum-computing-information/index|Quantum Computing & Information]]

@@ -19,8 +19,12 @@ the active publishing locations.
   do not duplicate events in Journey.
 - `quartz/content/` is the public notebook with five hubs: `physics/`,
   `quantum/`, `high-energy-nuclear/`, `computing-ai/`, and
-  `reading-reflections/`. Publish developed notes only; do not add private
-  drafts or placeholders.
+  `reading-reflections/`. Quantum has stable sub-hubs for mechanics, QFT, open
+  systems, and computing/information; High-Energy & Nuclear Physics has the
+  seven paths listed in `docs/SITE-ARCHITECTURE.md`. `reference-shelf.md`
+  registers source IDs. Notes use `note_type`, `status`, and `source_basis`;
+  maturity values describe the note, not expertise. Publish only explicitly
+  approved, source-checked notes; never add private drafts or filler prose.
 - `_journey/` holds verified public chronology. Link to canonical `_events/`
   entries rather than repeating event facts.
 - `_pages/` holds About, Academic Record, CV, Now, and the main research and
